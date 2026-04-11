@@ -1,3 +1,6 @@
 # vlsidsp2024
 
-this is a training lab for Systolic Array
+1.題目只給12bits做內部運算  所以實際上不可能跟cordic精確解很接近  所以只要硬體跟演算法一致就算過關  實際要做取bits不可能只拿12bits 要先用matlab py之類的勾出一個接近的fix point再做
+2.cordic本身就是要避免乘法跟三角查表 所以最後正規化的部分用>>>來取代*.607 其實了解怎麼化簡成systolic array的形式花很久時間  剩下只是照著刻而已
+3.題目有給PE的長相 具體頂層只要做對時間的管制把輸入送進去 從演算法上計算每個r q元素的輸出時間 最後再取出來就好  用pipe的方式可以不用開到一個陣列就能慢慢取 基本上delay似乎不能改善太大  因為題目有給hint 大概每個pe的啟動時間
+
