@@ -1,0 +1,1879 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : qr_top
+Version: T-2022.03
+Date   : Mon Apr 13 15:00:57 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U11283/Y (NAND2BX2)                                     0.32       0.63 f
+  U11287/Y (NOR2X2)                                       0.50       1.13 r
+  U17394/Y (AOI222XL)                                     0.18       1.32 f
+  U17395/Y (INVXL)                                        0.06       1.38 r
+  U7444/Y (XOR2XL)                                        0.13       1.50 f
+  DP_OP_431J1_226_8680_U13/CO (ADDFXL)                    0.20       1.70 f
+  DP_OP_431J1_226_8680_U12/CO (ADDFXL)                    0.18       1.88 f
+  DP_OP_431J1_226_8680_U11/CO (ADDFXL)                    0.18       2.07 f
+  DP_OP_431J1_226_8680_U10/CO (ADDFXL)                    0.18       2.25 f
+  DP_OP_431J1_226_8680_U9/CO (ADDFXL)                     0.18       2.43 f
+  DP_OP_431J1_226_8680_U8/CO (ADDFXL)                     0.18       2.61 f
+  DP_OP_431J1_226_8680_U7/CO (ADDFXL)                     0.18       2.79 f
+  DP_OP_431J1_226_8680_U6/CO (ADDFXL)                     0.18       2.98 f
+  DP_OP_431J1_226_8680_U5/CO (ADDFXL)                     0.18       3.16 f
+  DP_OP_431J1_226_8680_U4/CO (ADDFXL)                     0.18       3.34 f
+  DP_OP_431J1_226_8680_U3/CO (ADDFXL)                     0.17       3.51 f
+  U11453/Y (XOR2X1)                                       0.30       3.81 r
+  U6956/Y (INVX2)                                         0.18       4.00 f
+  U17379/Y (XOR2XL)                                       0.13       4.12 f
+  DP_OP_433J1_232_7353_U13/CO (ADDFXL)                    0.19       4.31 f
+  DP_OP_433J1_232_7353_U12/CO (ADDFXL)                    0.18       4.50 f
+  DP_OP_433J1_232_7353_U11/CO (ADDFXL)                    0.18       4.68 f
+  DP_OP_433J1_232_7353_U10/CO (ADDFXL)                    0.18       4.86 f
+  DP_OP_433J1_232_7353_U9/CO (ADDFXL)                     0.18       5.04 f
+  DP_OP_433J1_232_7353_U8/CO (ADDFXL)                     0.18       5.22 f
+  DP_OP_433J1_232_7353_U7/CO (ADDFXL)                     0.18       5.40 f
+  DP_OP_433J1_232_7353_U6/CO (ADDFXL)                     0.18       5.59 f
+  DP_OP_433J1_232_7353_U5/CO (ADDFXL)                     0.18       5.77 f
+  DP_OP_433J1_232_7353_U4/CO (ADDFXL)                     0.18       5.95 f
+  DP_OP_433J1_232_7353_U3/CO (ADDFXL)                     0.17       6.12 f
+  U9010/Y (XOR2X1)                                        0.26       6.39 r
+  U12221/Y (INVXL)                                        0.31       6.70 f
+  U7673/Y (XOR2XL)                                        0.15       6.84 f
+  DP_OP_435J1_238_6877_U13/CO (ADDFXL)                    0.20       7.04 f
+  DP_OP_435J1_238_6877_U12/CO (ADDFXL)                    0.18       7.22 f
+  DP_OP_435J1_238_6877_U11/CO (ADDFXL)                    0.18       7.40 f
+  DP_OP_435J1_238_6877_U10/CO (ADDFXL)                    0.18       7.59 f
+  DP_OP_435J1_238_6877_U9/CO (ADDFXL)                     0.18       7.77 f
+  DP_OP_435J1_238_6877_U8/CO (ADDFXL)                     0.18       7.95 f
+  DP_OP_435J1_238_6877_U7/CO (ADDFXL)                     0.18       8.13 f
+  DP_OP_435J1_238_6877_U6/CO (ADDFXL)                     0.18       8.31 f
+  DP_OP_435J1_238_6877_U5/CO (ADDFXL)                     0.18       8.49 f
+  DP_OP_435J1_238_6877_U4/CO (ADDFXL)                     0.18       8.68 f
+  DP_OP_435J1_238_6877_U3/CO (ADDFXL)                     0.17       8.85 f
+  U7105/Y (XOR2XL)                                        0.14       8.99 f
+  U7307/Y (NAND2BXL)                                      0.07       9.06 r
+  U7306/Y (NAND2XL)                                       0.27       9.33 f
+  U11874/Y (XOR2XL)                                       0.16       9.49 f
+  DP_OP_3389J1_710_3724_U13/CO (ADDFXL)                   0.26       9.74 f
+  DP_OP_3389J1_710_3724_U12/CO (ADDFXL)                   0.24       9.99 f
+  DP_OP_3389J1_710_3724_U11/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3389J1_710_3724_U10/CO (ADDFXL)                   0.18      10.35 f
+  DP_OP_3389J1_710_3724_U9/CO (ADDFXL)                    0.18      10.53 f
+  DP_OP_3389J1_710_3724_U8/CO (ADDFXL)                    0.18      10.71 f
+  DP_OP_3389J1_710_3724_U7/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3389J1_710_3724_U6/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3389J1_710_3724_U5/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3389J1_710_3724_U4/CO (ADDFXL)                    0.18      11.44 f
+  DP_OP_3389J1_710_3724_U3/CO (ADDFXL)                    0.17      11.61 f
+  U12027/Y (XOR2XL)                                       0.07      11.69 r
+  U6970/Y (AO22XL)                                        0.11      11.80 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_11_/D (DFFRQXL)
+                                                          0.00      11.80 r
+  data arrival time                                                 11.80
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_11_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U11283/Y (NAND2BX2)                                     0.32       0.63 f
+  U11287/Y (NOR2X2)                                       0.50       1.13 r
+  U17394/Y (AOI222XL)                                     0.18       1.32 f
+  U17395/Y (INVXL)                                        0.06       1.38 r
+  U7444/Y (XOR2XL)                                        0.13       1.50 f
+  DP_OP_431J1_226_8680_U13/CO (ADDFXL)                    0.20       1.70 f
+  DP_OP_431J1_226_8680_U12/CO (ADDFXL)                    0.18       1.88 f
+  DP_OP_431J1_226_8680_U11/CO (ADDFXL)                    0.18       2.07 f
+  DP_OP_431J1_226_8680_U10/CO (ADDFXL)                    0.18       2.25 f
+  DP_OP_431J1_226_8680_U9/CO (ADDFXL)                     0.18       2.43 f
+  DP_OP_431J1_226_8680_U8/CO (ADDFXL)                     0.18       2.61 f
+  DP_OP_431J1_226_8680_U7/CO (ADDFXL)                     0.18       2.79 f
+  DP_OP_431J1_226_8680_U6/CO (ADDFXL)                     0.18       2.98 f
+  DP_OP_431J1_226_8680_U5/CO (ADDFXL)                     0.18       3.16 f
+  DP_OP_431J1_226_8680_U4/CO (ADDFXL)                     0.18       3.34 f
+  DP_OP_431J1_226_8680_U3/CO (ADDFXL)                     0.17       3.51 f
+  U11453/Y (XOR2X1)                                       0.30       3.81 r
+  U6956/Y (INVX2)                                         0.18       4.00 f
+  U17379/Y (XOR2XL)                                       0.13       4.12 f
+  DP_OP_433J1_232_7353_U13/CO (ADDFXL)                    0.19       4.31 f
+  DP_OP_433J1_232_7353_U12/CO (ADDFXL)                    0.18       4.50 f
+  DP_OP_433J1_232_7353_U11/CO (ADDFXL)                    0.18       4.68 f
+  DP_OP_433J1_232_7353_U10/CO (ADDFXL)                    0.18       4.86 f
+  DP_OP_433J1_232_7353_U9/CO (ADDFXL)                     0.18       5.04 f
+  DP_OP_433J1_232_7353_U8/CO (ADDFXL)                     0.18       5.22 f
+  DP_OP_433J1_232_7353_U7/CO (ADDFXL)                     0.18       5.40 f
+  DP_OP_433J1_232_7353_U6/CO (ADDFXL)                     0.18       5.59 f
+  DP_OP_433J1_232_7353_U5/CO (ADDFXL)                     0.18       5.77 f
+  DP_OP_433J1_232_7353_U4/CO (ADDFXL)                     0.18       5.95 f
+  DP_OP_433J1_232_7353_U3/CO (ADDFXL)                     0.17       6.12 f
+  U9010/Y (XOR2X1)                                        0.26       6.39 r
+  U12221/Y (INVXL)                                        0.31       6.70 f
+  U7673/Y (XOR2XL)                                        0.15       6.84 f
+  DP_OP_435J1_238_6877_U13/CO (ADDFXL)                    0.20       7.04 f
+  DP_OP_435J1_238_6877_U12/CO (ADDFXL)                    0.18       7.22 f
+  DP_OP_435J1_238_6877_U11/CO (ADDFXL)                    0.18       7.40 f
+  DP_OP_435J1_238_6877_U10/CO (ADDFXL)                    0.18       7.59 f
+  DP_OP_435J1_238_6877_U9/CO (ADDFXL)                     0.18       7.77 f
+  DP_OP_435J1_238_6877_U8/CO (ADDFXL)                     0.18       7.95 f
+  DP_OP_435J1_238_6877_U7/CO (ADDFXL)                     0.18       8.13 f
+  DP_OP_435J1_238_6877_U6/CO (ADDFXL)                     0.18       8.31 f
+  DP_OP_435J1_238_6877_U5/CO (ADDFXL)                     0.18       8.49 f
+  DP_OP_435J1_238_6877_U4/CO (ADDFXL)                     0.18       8.68 f
+  DP_OP_435J1_238_6877_U3/CO (ADDFXL)                     0.17       8.85 f
+  U7105/Y (XOR2XL)                                        0.14       8.99 f
+  U7702/Y (NOR2XL)                                        0.37       9.36 r
+  U11884/Y (XOR2XL)                                       0.18       9.55 f
+  DP_OP_3377J1_707_1839_U13/CO (ADDFXL)                   0.21       9.75 f
+  DP_OP_3377J1_707_1839_U12/CO (ADDFXL)                   0.18       9.94 f
+  DP_OP_3377J1_707_1839_U11/CO (ADDFXL)                   0.18      10.12 f
+  DP_OP_3377J1_707_1839_U10/CO (ADDFXL)                   0.18      10.30 f
+  DP_OP_3377J1_707_1839_U9/CO (ADDFXL)                    0.18      10.48 f
+  DP_OP_3377J1_707_1839_U8/CO (ADDFXL)                    0.18      10.66 f
+  DP_OP_3377J1_707_1839_U7/CO (ADDFXL)                    0.18      10.85 f
+  DP_OP_3377J1_707_1839_U6/CO (ADDFXL)                    0.18      11.03 f
+  DP_OP_3377J1_707_1839_U5/CO (ADDFXL)                    0.18      11.21 f
+  DP_OP_3377J1_707_1839_U4/CO (ADDFXL)                    0.18      11.39 f
+  DP_OP_3377J1_707_1839_U3/CO (ADDFXL)                    0.17      11.56 f
+  U11923/Y (XOR2XL)                                       0.08      11.64 r
+  U13367/Y (AOI222XL)                                     0.09      11.73 f
+  U12048/Y (INVXL)                                        0.06      11.79 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_11_/D (DFFRQX1)
+                                                          0.00      11.79 r
+  data arrival time                                                 11.79
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_11_/CK (DFFRQX1)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.38
+
+
+  Startpoint: row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7177/Y (NOR2X1)                                        0.31       0.62 r
+  U10790/Y (AND2X2)                                       0.32       0.94 r
+  U17462/Y (AOI22XL)                                      0.10       1.04 f
+  U17463/Y (OAI21XL)                                      0.06       1.10 r
+  U17464/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_353J1_208_4122_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_353J1_208_4122_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_353J1_208_4122_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_353J1_208_4122_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_353J1_208_4122_U9/CO (ADDFXL)                     0.18       2.16 f
+  DP_OP_353J1_208_4122_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_353J1_208_4122_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_353J1_208_4122_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_353J1_208_4122_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_353J1_208_4122_U4/CO (ADDFXL)                     0.18       3.07 f
+  DP_OP_353J1_208_4122_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11348/Y (XOR2X1)                                       0.29       3.53 r
+  U7469/Y (INVXL)                                         0.33       3.86 f
+  U17443/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_355J1_214_516_U13/CO (ADDFXL)                     0.20       4.21 f
+  DP_OP_355J1_214_516_U12/CO (ADDFXL)                     0.18       4.39 f
+  DP_OP_355J1_214_516_U11/CO (ADDFXL)                     0.18       4.57 f
+  DP_OP_355J1_214_516_U10/CO (ADDFXL)                     0.18       4.75 f
+  DP_OP_355J1_214_516_U9/CO (ADDFXL)                      0.18       4.93 f
+  DP_OP_355J1_214_516_U8/CO (ADDFXL)                      0.18       5.11 f
+  DP_OP_355J1_214_516_U7/CO (ADDFXL)                      0.18       5.30 f
+  DP_OP_355J1_214_516_U6/CO (ADDFXL)                      0.18       5.48 f
+  DP_OP_355J1_214_516_U5/CO (ADDFXL)                      0.18       5.66 f
+  DP_OP_355J1_214_516_U4/CO (ADDFXL)                      0.18       5.84 f
+  DP_OP_355J1_214_516_U3/CO (ADDFXL)                      0.17       6.01 f
+  U11351/Y (XOR2X1)                                       0.27       6.29 r
+  U8154/Y (INVXL)                                         0.30       6.59 f
+  U17417/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_357J1_220_6401_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_357J1_220_6401_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_357J1_220_6401_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_357J1_220_6401_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_357J1_220_6401_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_357J1_220_6401_U8/CO (ADDFXL)                     0.18       7.85 f
+  DP_OP_357J1_220_6401_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_357J1_220_6401_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_357J1_220_6401_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_357J1_220_6401_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_357J1_220_6401_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7101/Y (XOR2XL)                                        0.14       8.88 f
+  U11352/Y (NAND2XL)                                      0.08       8.96 r
+  U7610/Y (NAND2XL)                                       0.28       9.24 f
+  U11514/Y (XOR2XL)                                       0.16       9.40 f
+  DP_OP_3376J1_703_6186_U13/CO (ADDFXL)                   0.26       9.66 f
+  DP_OP_3376J1_703_6186_U12/CO (ADDFXL)                   0.24       9.90 f
+  DP_OP_3376J1_703_6186_U11/CO (ADDFXL)                   0.18      10.08 f
+  DP_OP_3376J1_703_6186_U10/CO (ADDFXL)                   0.18      10.26 f
+  DP_OP_3376J1_703_6186_U9/CO (ADDFXL)                    0.18      10.45 f
+  DP_OP_3376J1_703_6186_U8/CO (ADDFXL)                    0.18      10.63 f
+  DP_OP_3376J1_703_6186_U7/CO (ADDFXL)                    0.18      10.81 f
+  DP_OP_3376J1_703_6186_U6/CO (ADDFXL)                    0.18      10.99 f
+  DP_OP_3376J1_703_6186_U5/CO (ADDFXL)                    0.18      11.17 f
+  DP_OP_3376J1_703_6186_U4/CO (ADDFXL)                    0.18      11.36 f
+  DP_OP_3376J1_703_6186_U3/CO (ADDFXL)                    0.17      11.53 f
+  U11943/Y (XOR2XL)                                       0.07      11.60 r
+  U6960/Y (AO22XL)                                        0.11      11.71 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_11_/D (DFFRQXL)
+                                                          0.00      11.71 r
+  data arrival time                                                 11.71
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_11_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+  Startpoint: row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7180/Y (NOR2X1)                                        0.31       0.62 r
+  U10879/Y (AND2X2)                                       0.32       0.94 r
+  U17537/Y (AOI22XL)                                      0.10       1.04 f
+  U17538/Y (OAI21XL)                                      0.06       1.10 r
+  U17539/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_275J1_190_3646_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_275J1_190_3646_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_275J1_190_3646_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_275J1_190_3646_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_275J1_190_3646_U9/CO (ADDFXL)                     0.18       2.15 f
+  DP_OP_275J1_190_3646_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_275J1_190_3646_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_275J1_190_3646_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_275J1_190_3646_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_275J1_190_3646_U4/CO (ADDFXL)                     0.18       3.06 f
+  DP_OP_275J1_190_3646_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11380/Y (XOR2X1)                                       0.29       3.53 r
+  U7470/Y (INVXL)                                         0.33       3.86 f
+  U17513/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_277J1_196_5925_U13/CO (ADDFXL)                    0.20       4.20 f
+  DP_OP_277J1_196_5925_U12/CO (ADDFXL)                    0.18       4.39 f
+  DP_OP_277J1_196_5925_U11/CO (ADDFXL)                    0.18       4.57 f
+  DP_OP_277J1_196_5925_U10/CO (ADDFXL)                    0.18       4.75 f
+  DP_OP_277J1_196_5925_U9/CO (ADDFXL)                     0.18       4.93 f
+  DP_OP_277J1_196_5925_U8/CO (ADDFXL)                     0.18       5.11 f
+  DP_OP_277J1_196_5925_U7/CO (ADDFXL)                     0.18       5.30 f
+  DP_OP_277J1_196_5925_U6/CO (ADDFXL)                     0.18       5.48 f
+  DP_OP_277J1_196_5925_U5/CO (ADDFXL)                     0.18       5.66 f
+  DP_OP_277J1_196_5925_U4/CO (ADDFXL)                     0.18       5.84 f
+  DP_OP_277J1_196_5925_U3/CO (ADDFXL)                     0.17       6.01 f
+  U11383/Y (XOR2X1)                                       0.27       6.29 r
+  U8181/Y (INVXL)                                         0.30       6.59 f
+  U17487/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_279J1_202_4598_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_279J1_202_4598_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_279J1_202_4598_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_279J1_202_4598_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_279J1_202_4598_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_279J1_202_4598_U8/CO (ADDFXL)                     0.18       7.84 f
+  DP_OP_279J1_202_4598_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_279J1_202_4598_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_279J1_202_4598_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_279J1_202_4598_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_279J1_202_4598_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7102/Y (XOR2XL)                                        0.14       8.88 f
+  U11384/Y (NAND2XL)                                      0.08       8.96 r
+  U7633/Y (NAND2XL)                                       0.28       9.24 f
+  U11584/Y (XOR2XL)                                       0.16       9.40 f
+  DP_OP_3363J1_696_4685_U13/CO (ADDFXL)                   0.26       9.66 f
+  DP_OP_3363J1_696_4685_U12/CO (ADDFXL)                   0.24       9.90 f
+  DP_OP_3363J1_696_4685_U11/CO (ADDFXL)                   0.18      10.08 f
+  DP_OP_3363J1_696_4685_U10/CO (ADDFXL)                   0.18      10.26 f
+  DP_OP_3363J1_696_4685_U9/CO (ADDFXL)                    0.18      10.44 f
+  DP_OP_3363J1_696_4685_U8/CO (ADDFXL)                    0.18      10.63 f
+  DP_OP_3363J1_696_4685_U7/CO (ADDFXL)                    0.18      10.81 f
+  DP_OP_3363J1_696_4685_U6/CO (ADDFXL)                    0.18      10.99 f
+  DP_OP_3363J1_696_4685_U5/CO (ADDFXL)                    0.18      11.17 f
+  DP_OP_3363J1_696_4685_U4/CO (ADDFXL)                    0.18      11.35 f
+  DP_OP_3363J1_696_4685_U3/CO (ADDFXL)                    0.17      11.53 f
+  U11960/Y (XOR2XL)                                       0.07      11.60 r
+  U6957/Y (AO22XL)                                        0.11      11.71 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_11_/D (DFFRQXL)
+                                                          0.00      11.71 r
+  data arrival time                                                 11.71
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_11_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+  Startpoint: row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_2__col_gen_2__genblk1_pe_vec_y_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7177/Y (NOR2X1)                                        0.31       0.62 r
+  U10790/Y (AND2X2)                                       0.32       0.94 r
+  U17462/Y (AOI22XL)                                      0.10       1.04 f
+  U17463/Y (OAI21XL)                                      0.06       1.10 r
+  U17464/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_353J1_208_4122_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_353J1_208_4122_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_353J1_208_4122_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_353J1_208_4122_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_353J1_208_4122_U9/CO (ADDFXL)                     0.18       2.16 f
+  DP_OP_353J1_208_4122_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_353J1_208_4122_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_353J1_208_4122_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_353J1_208_4122_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_353J1_208_4122_U4/CO (ADDFXL)                     0.18       3.07 f
+  DP_OP_353J1_208_4122_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11348/Y (XOR2X1)                                       0.29       3.53 r
+  U7469/Y (INVXL)                                         0.33       3.86 f
+  U17443/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_355J1_214_516_U13/CO (ADDFXL)                     0.20       4.21 f
+  DP_OP_355J1_214_516_U12/CO (ADDFXL)                     0.18       4.39 f
+  DP_OP_355J1_214_516_U11/CO (ADDFXL)                     0.18       4.57 f
+  DP_OP_355J1_214_516_U10/CO (ADDFXL)                     0.18       4.75 f
+  DP_OP_355J1_214_516_U9/CO (ADDFXL)                      0.18       4.93 f
+  DP_OP_355J1_214_516_U8/CO (ADDFXL)                      0.18       5.11 f
+  DP_OP_355J1_214_516_U7/CO (ADDFXL)                      0.18       5.30 f
+  DP_OP_355J1_214_516_U6/CO (ADDFXL)                      0.18       5.48 f
+  DP_OP_355J1_214_516_U5/CO (ADDFXL)                      0.18       5.66 f
+  DP_OP_355J1_214_516_U4/CO (ADDFXL)                      0.18       5.84 f
+  DP_OP_355J1_214_516_U3/CO (ADDFXL)                      0.17       6.01 f
+  U11351/Y (XOR2X1)                                       0.27       6.29 r
+  U8154/Y (INVXL)                                         0.30       6.59 f
+  U17417/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_357J1_220_6401_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_357J1_220_6401_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_357J1_220_6401_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_357J1_220_6401_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_357J1_220_6401_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_357J1_220_6401_U8/CO (ADDFXL)                     0.18       7.85 f
+  DP_OP_357J1_220_6401_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_357J1_220_6401_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_357J1_220_6401_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_357J1_220_6401_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_357J1_220_6401_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7101/Y (XOR2XL)                                        0.14       8.88 f
+  U7604/Y (NOR2XL)                                        0.36       9.24 r
+  U15811/Y (XOR2XL)                                       0.18       9.42 f
+  DP_OP_3364J1_700_9527_U13/CO (ADDFXL)                   0.21       9.63 f
+  DP_OP_3364J1_700_9527_U12/CO (ADDFXL)                   0.18       9.81 f
+  DP_OP_3364J1_700_9527_U11/CO (ADDFXL)                   0.18       9.99 f
+  DP_OP_3364J1_700_9527_U10/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3364J1_700_9527_U9/CO (ADDFXL)                    0.18      10.36 f
+  DP_OP_3364J1_700_9527_U8/CO (ADDFXL)                    0.18      10.54 f
+  DP_OP_3364J1_700_9527_U7/CO (ADDFXL)                    0.18      10.72 f
+  DP_OP_3364J1_700_9527_U6/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3364J1_700_9527_U5/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3364J1_700_9527_U4/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3364J1_700_9527_U3/CO (ADDFXL)                    0.17      11.44 f
+  U11928/Y (XOR2XL)                                       0.08      11.52 f
+  U17761/Y (AOI222XL)                                     0.18      11.70 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_y_reg_reg_11_/D (DFFSX1)
+                                                          0.00      11.70 r
+  data arrival time                                                 11.70
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_2__col_gen_2__genblk1_pe_vec_y_reg_reg_11_/CK (DFFSX1)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_3__col_gen_3__genblk1_pe_vec_y_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7180/Y (NOR2X1)                                        0.31       0.62 r
+  U10879/Y (AND2X2)                                       0.32       0.94 r
+  U17537/Y (AOI22XL)                                      0.10       1.04 f
+  U17538/Y (OAI21XL)                                      0.06       1.10 r
+  U17539/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_275J1_190_3646_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_275J1_190_3646_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_275J1_190_3646_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_275J1_190_3646_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_275J1_190_3646_U9/CO (ADDFXL)                     0.18       2.15 f
+  DP_OP_275J1_190_3646_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_275J1_190_3646_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_275J1_190_3646_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_275J1_190_3646_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_275J1_190_3646_U4/CO (ADDFXL)                     0.18       3.06 f
+  DP_OP_275J1_190_3646_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11380/Y (XOR2X1)                                       0.29       3.53 r
+  U7470/Y (INVXL)                                         0.33       3.86 f
+  U17513/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_277J1_196_5925_U13/CO (ADDFXL)                    0.20       4.20 f
+  DP_OP_277J1_196_5925_U12/CO (ADDFXL)                    0.18       4.39 f
+  DP_OP_277J1_196_5925_U11/CO (ADDFXL)                    0.18       4.57 f
+  DP_OP_277J1_196_5925_U10/CO (ADDFXL)                    0.18       4.75 f
+  DP_OP_277J1_196_5925_U9/CO (ADDFXL)                     0.18       4.93 f
+  DP_OP_277J1_196_5925_U8/CO (ADDFXL)                     0.18       5.11 f
+  DP_OP_277J1_196_5925_U7/CO (ADDFXL)                     0.18       5.30 f
+  DP_OP_277J1_196_5925_U6/CO (ADDFXL)                     0.18       5.48 f
+  DP_OP_277J1_196_5925_U5/CO (ADDFXL)                     0.18       5.66 f
+  DP_OP_277J1_196_5925_U4/CO (ADDFXL)                     0.18       5.84 f
+  DP_OP_277J1_196_5925_U3/CO (ADDFXL)                     0.17       6.01 f
+  U11383/Y (XOR2X1)                                       0.27       6.29 r
+  U8181/Y (INVXL)                                         0.30       6.59 f
+  U17487/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_279J1_202_4598_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_279J1_202_4598_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_279J1_202_4598_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_279J1_202_4598_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_279J1_202_4598_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_279J1_202_4598_U8/CO (ADDFXL)                     0.18       7.84 f
+  DP_OP_279J1_202_4598_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_279J1_202_4598_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_279J1_202_4598_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_279J1_202_4598_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_279J1_202_4598_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7102/Y (XOR2XL)                                        0.14       8.88 f
+  U7624/Y (NOR2XL)                                        0.36       9.24 r
+  U15830/Y (XOR2XL)                                       0.18       9.42 f
+  DP_OP_3351J1_693_3166_U13/CO (ADDFXL)                   0.21       9.63 f
+  DP_OP_3351J1_693_3166_U12/CO (ADDFXL)                   0.18       9.81 f
+  DP_OP_3351J1_693_3166_U11/CO (ADDFXL)                   0.18       9.99 f
+  DP_OP_3351J1_693_3166_U10/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3351J1_693_3166_U9/CO (ADDFXL)                    0.18      10.35 f
+  DP_OP_3351J1_693_3166_U8/CO (ADDFXL)                    0.18      10.54 f
+  DP_OP_3351J1_693_3166_U7/CO (ADDFXL)                    0.18      10.72 f
+  DP_OP_3351J1_693_3166_U6/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3351J1_693_3166_U5/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3351J1_693_3166_U4/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3351J1_693_3166_U3/CO (ADDFXL)                    0.17      11.44 f
+  U11930/Y (XOR2XL)                                       0.08      11.52 f
+  U17777/Y (AOI222XL)                                     0.18      11.70 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_y_reg_reg_11_/D (DFFSX1)
+                                                          0.00      11.70 r
+  data arrival time                                                 11.70
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_3__col_gen_3__genblk1_pe_vec_y_reg_reg_11_/CK (DFFSX1)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U11283/Y (NAND2BX2)                                     0.32       0.63 f
+  U11287/Y (NOR2X2)                                       0.50       1.13 r
+  U17394/Y (AOI222XL)                                     0.18       1.32 f
+  U17395/Y (INVXL)                                        0.06       1.38 r
+  U7444/Y (XOR2XL)                                        0.13       1.50 f
+  DP_OP_431J1_226_8680_U13/CO (ADDFXL)                    0.20       1.70 f
+  DP_OP_431J1_226_8680_U12/CO (ADDFXL)                    0.18       1.88 f
+  DP_OP_431J1_226_8680_U11/CO (ADDFXL)                    0.18       2.07 f
+  DP_OP_431J1_226_8680_U10/CO (ADDFXL)                    0.18       2.25 f
+  DP_OP_431J1_226_8680_U9/CO (ADDFXL)                     0.18       2.43 f
+  DP_OP_431J1_226_8680_U8/CO (ADDFXL)                     0.18       2.61 f
+  DP_OP_431J1_226_8680_U7/CO (ADDFXL)                     0.18       2.79 f
+  DP_OP_431J1_226_8680_U6/CO (ADDFXL)                     0.18       2.98 f
+  DP_OP_431J1_226_8680_U5/CO (ADDFXL)                     0.18       3.16 f
+  DP_OP_431J1_226_8680_U4/CO (ADDFXL)                     0.18       3.34 f
+  DP_OP_431J1_226_8680_U3/CO (ADDFXL)                     0.17       3.51 f
+  U11453/Y (XOR2X1)                                       0.30       3.81 r
+  U6956/Y (INVX2)                                         0.18       4.00 f
+  U17379/Y (XOR2XL)                                       0.13       4.12 f
+  DP_OP_433J1_232_7353_U13/CO (ADDFXL)                    0.19       4.31 f
+  DP_OP_433J1_232_7353_U12/CO (ADDFXL)                    0.18       4.50 f
+  DP_OP_433J1_232_7353_U11/CO (ADDFXL)                    0.18       4.68 f
+  DP_OP_433J1_232_7353_U10/CO (ADDFXL)                    0.18       4.86 f
+  DP_OP_433J1_232_7353_U9/CO (ADDFXL)                     0.18       5.04 f
+  DP_OP_433J1_232_7353_U8/CO (ADDFXL)                     0.18       5.22 f
+  DP_OP_433J1_232_7353_U7/CO (ADDFXL)                     0.18       5.40 f
+  DP_OP_433J1_232_7353_U6/CO (ADDFXL)                     0.18       5.59 f
+  DP_OP_433J1_232_7353_U5/CO (ADDFXL)                     0.18       5.77 f
+  DP_OP_433J1_232_7353_U4/CO (ADDFXL)                     0.18       5.95 f
+  DP_OP_433J1_232_7353_U3/CO (ADDFXL)                     0.17       6.12 f
+  U9010/Y (XOR2X1)                                        0.26       6.39 r
+  U12221/Y (INVXL)                                        0.31       6.70 f
+  U7673/Y (XOR2XL)                                        0.15       6.84 f
+  DP_OP_435J1_238_6877_U13/CO (ADDFXL)                    0.20       7.04 f
+  DP_OP_435J1_238_6877_U12/CO (ADDFXL)                    0.18       7.22 f
+  DP_OP_435J1_238_6877_U11/CO (ADDFXL)                    0.18       7.40 f
+  DP_OP_435J1_238_6877_U10/CO (ADDFXL)                    0.18       7.59 f
+  DP_OP_435J1_238_6877_U9/CO (ADDFXL)                     0.18       7.77 f
+  DP_OP_435J1_238_6877_U8/CO (ADDFXL)                     0.18       7.95 f
+  DP_OP_435J1_238_6877_U7/CO (ADDFXL)                     0.18       8.13 f
+  DP_OP_435J1_238_6877_U6/CO (ADDFXL)                     0.18       8.31 f
+  DP_OP_435J1_238_6877_U5/CO (ADDFXL)                     0.18       8.49 f
+  DP_OP_435J1_238_6877_U4/CO (ADDFXL)                     0.18       8.68 f
+  DP_OP_435J1_238_6877_U3/CO (ADDFXL)                     0.17       8.85 f
+  U7105/Y (XOR2XL)                                        0.14       8.99 f
+  U7307/Y (NAND2BXL)                                      0.07       9.06 r
+  U7306/Y (NAND2XL)                                       0.27       9.33 f
+  U11874/Y (XOR2XL)                                       0.16       9.49 f
+  DP_OP_3389J1_710_3724_U13/CO (ADDFXL)                   0.26       9.74 f
+  DP_OP_3389J1_710_3724_U12/CO (ADDFXL)                   0.24       9.99 f
+  DP_OP_3389J1_710_3724_U11/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3389J1_710_3724_U10/CO (ADDFXL)                   0.18      10.35 f
+  DP_OP_3389J1_710_3724_U9/CO (ADDFXL)                    0.18      10.53 f
+  DP_OP_3389J1_710_3724_U8/CO (ADDFXL)                    0.18      10.71 f
+  DP_OP_3389J1_710_3724_U7/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3389J1_710_3724_U6/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3389J1_710_3724_U5/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3389J1_710_3724_U4/CO (ADDFXL)                    0.18      11.44 f
+  DP_OP_3389J1_710_3724_U3/S (ADDFXL)                     0.15      11.59 r
+  U7010/Y (AO22XL)                                        0.09      11.68 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.68 r
+  data arrival time                                                 11.68
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_0__col_gen_0__genblk1_pe_vec_x_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7172/Y (NOR2X1)                                        0.29       0.60 r
+  U11331/Y (AND2X2)                                       0.31       0.92 r
+  U17635/Y (INVXL)                                        0.13       1.05 f
+  U17694/Y (OAI21XL)                                      0.10       1.15 r
+  U17695/Y (XOR2XL)                                       0.13       1.28 f
+  DP_OP_118J1_151_8644_U13/CO (ADDFXL)                    0.20       1.48 f
+  DP_OP_118J1_151_8644_U12/CO (ADDFXL)                    0.18       1.66 f
+  DP_OP_118J1_151_8644_U11/CO (ADDFXL)                    0.18       1.84 f
+  DP_OP_118J1_151_8644_U10/CO (ADDFXL)                    0.18       2.02 f
+  DP_OP_118J1_151_8644_U9/CO (ADDFXL)                     0.18       2.21 f
+  DP_OP_118J1_151_8644_U8/CO (ADDFXL)                     0.18       2.39 f
+  DP_OP_118J1_151_8644_U7/CO (ADDFXL)                     0.18       2.57 f
+  DP_OP_118J1_151_8644_U6/CO (ADDFXL)                     0.18       2.75 f
+  DP_OP_118J1_151_8644_U5/CO (ADDFXL)                     0.18       2.93 f
+  DP_OP_118J1_151_8644_U4/CO (ADDFXL)                     0.18       3.12 f
+  DP_OP_118J1_151_8644_U3/CO (ADDFXL)                     0.17       3.29 f
+  U11463/Y (XOR2X1)                                       0.29       3.58 r
+  U7471/Y (INVXL)                                         0.33       3.91 f
+  U17667/Y (XOR2XL)                                       0.15       4.06 f
+  DP_OP_120J1_157_5038_U13/CO (ADDFXL)                    0.20       4.26 f
+  DP_OP_120J1_157_5038_U12/CO (ADDFXL)                    0.18       4.44 f
+  DP_OP_120J1_157_5038_U11/CO (ADDFXL)                    0.18       4.62 f
+  DP_OP_120J1_157_5038_U10/CO (ADDFXL)                    0.18       4.80 f
+  DP_OP_120J1_157_5038_U9/CO (ADDFXL)                     0.18       4.98 f
+  DP_OP_120J1_157_5038_U8/CO (ADDFXL)                     0.18       5.17 f
+  DP_OP_120J1_157_5038_U7/CO (ADDFXL)                     0.18       5.35 f
+  DP_OP_120J1_157_5038_U6/CO (ADDFXL)                     0.18       5.53 f
+  DP_OP_120J1_157_5038_U5/CO (ADDFXL)                     0.18       5.71 f
+  DP_OP_120J1_157_5038_U4/CO (ADDFXL)                     0.18       5.89 f
+  DP_OP_120J1_157_5038_U3/CO (ADDFXL)                     0.17       6.07 f
+  U11465/Y (XOR2X1)                                       0.27       6.33 r
+  U7114/Y (INVX1)                                         0.26       6.59 f
+  U17638/Y (XOR2XL)                                       0.14       6.73 f
+  DP_OP_122J1_163_7317_U13/CO (ADDFXL)                    0.19       6.92 f
+  DP_OP_122J1_163_7317_U12/CO (ADDFXL)                    0.18       7.10 f
+  DP_OP_122J1_163_7317_U11/CO (ADDFXL)                    0.18       7.29 f
+  DP_OP_122J1_163_7317_U10/CO (ADDFXL)                    0.18       7.47 f
+  DP_OP_122J1_163_7317_U9/CO (ADDFXL)                     0.18       7.65 f
+  DP_OP_122J1_163_7317_U8/CO (ADDFXL)                     0.18       7.83 f
+  DP_OP_122J1_163_7317_U7/CO (ADDFXL)                     0.18       8.01 f
+  DP_OP_122J1_163_7317_U6/CO (ADDFXL)                     0.18       8.19 f
+  DP_OP_122J1_163_7317_U5/CO (ADDFXL)                     0.18       8.38 f
+  DP_OP_122J1_163_7317_U4/CO (ADDFXL)                     0.18       8.56 f
+  DP_OP_122J1_163_7317_U3/CO (ADDFXL)                     0.17       8.73 f
+  U7103/Y (XOR2XL)                                        0.14       8.87 f
+  U7318/Y (NAND2XL)                                       0.06       8.93 r
+  U7317/Y (NAND2XL)                                       0.27       9.21 f
+  U11913/Y (XOR2XL)                                       0.16       9.37 f
+  DP_OP_3347J1_685_31_U13/CO (ADDFXL)                     0.26       9.62 f
+  DP_OP_3347J1_685_31_U12/CO (ADDFXL)                     0.24       9.87 f
+  DP_OP_3347J1_685_31_U11/CO (ADDFXL)                     0.18      10.05 f
+  DP_OP_3347J1_685_31_U10/CO (ADDFXL)                     0.18      10.23 f
+  DP_OP_3347J1_685_31_U9/CO (ADDFXL)                      0.18      10.41 f
+  DP_OP_3347J1_685_31_U8/CO (ADDFXL)                      0.18      10.59 f
+  DP_OP_3347J1_685_31_U7/CO (ADDFXL)                      0.18      10.78 f
+  DP_OP_3347J1_685_31_U6/CO (ADDFXL)                      0.18      10.96 f
+  DP_OP_3347J1_685_31_U5/CO (ADDFXL)                      0.18      11.14 f
+  DP_OP_3347J1_685_31_U4/CO (ADDFXL)                      0.18      11.32 f
+  DP_OP_3347J1_685_31_U3/CO (ADDFXL)                      0.17      11.49 f
+  U12037/Y (XOR2XL)                                       0.07      11.57 r
+  U6958/Y (AO22XL)                                        0.11      11.68 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_x_reg_reg_11_/D (DFFRQXL)
+                                                          0.00      11.68 r
+  data arrival time                                                 11.68
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_0__col_gen_0__genblk1_pe_vec_x_reg_reg_11_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U11283/Y (NAND2BX2)                                     0.32       0.63 f
+  U11287/Y (NOR2X2)                                       0.50       1.13 r
+  U17394/Y (AOI222XL)                                     0.18       1.32 f
+  U17395/Y (INVXL)                                        0.06       1.38 r
+  U7444/Y (XOR2XL)                                        0.13       1.50 f
+  DP_OP_431J1_226_8680_U13/CO (ADDFXL)                    0.20       1.70 f
+  DP_OP_431J1_226_8680_U12/CO (ADDFXL)                    0.18       1.88 f
+  DP_OP_431J1_226_8680_U11/CO (ADDFXL)                    0.18       2.07 f
+  DP_OP_431J1_226_8680_U10/CO (ADDFXL)                    0.18       2.25 f
+  DP_OP_431J1_226_8680_U9/CO (ADDFXL)                     0.18       2.43 f
+  DP_OP_431J1_226_8680_U8/CO (ADDFXL)                     0.18       2.61 f
+  DP_OP_431J1_226_8680_U7/CO (ADDFXL)                     0.18       2.79 f
+  DP_OP_431J1_226_8680_U6/CO (ADDFXL)                     0.18       2.98 f
+  DP_OP_431J1_226_8680_U5/CO (ADDFXL)                     0.18       3.16 f
+  DP_OP_431J1_226_8680_U4/CO (ADDFXL)                     0.18       3.34 f
+  DP_OP_431J1_226_8680_U3/CO (ADDFXL)                     0.17       3.51 f
+  U11453/Y (XOR2X1)                                       0.30       3.81 r
+  U6956/Y (INVX2)                                         0.18       4.00 f
+  U17379/Y (XOR2XL)                                       0.13       4.12 f
+  DP_OP_433J1_232_7353_U13/CO (ADDFXL)                    0.19       4.31 f
+  DP_OP_433J1_232_7353_U12/CO (ADDFXL)                    0.18       4.50 f
+  DP_OP_433J1_232_7353_U11/CO (ADDFXL)                    0.18       4.68 f
+  DP_OP_433J1_232_7353_U10/CO (ADDFXL)                    0.18       4.86 f
+  DP_OP_433J1_232_7353_U9/CO (ADDFXL)                     0.18       5.04 f
+  DP_OP_433J1_232_7353_U8/CO (ADDFXL)                     0.18       5.22 f
+  DP_OP_433J1_232_7353_U7/CO (ADDFXL)                     0.18       5.40 f
+  DP_OP_433J1_232_7353_U6/CO (ADDFXL)                     0.18       5.59 f
+  DP_OP_433J1_232_7353_U5/CO (ADDFXL)                     0.18       5.77 f
+  DP_OP_433J1_232_7353_U4/CO (ADDFXL)                     0.18       5.95 f
+  DP_OP_433J1_232_7353_U3/CO (ADDFXL)                     0.17       6.12 f
+  U9010/Y (XOR2X1)                                        0.26       6.39 r
+  U12221/Y (INVXL)                                        0.31       6.70 f
+  U7673/Y (XOR2XL)                                        0.15       6.84 f
+  DP_OP_435J1_238_6877_U13/CO (ADDFXL)                    0.20       7.04 f
+  DP_OP_435J1_238_6877_U12/CO (ADDFXL)                    0.18       7.22 f
+  DP_OP_435J1_238_6877_U11/CO (ADDFXL)                    0.18       7.40 f
+  DP_OP_435J1_238_6877_U10/CO (ADDFXL)                    0.18       7.59 f
+  DP_OP_435J1_238_6877_U9/CO (ADDFXL)                     0.18       7.77 f
+  DP_OP_435J1_238_6877_U8/CO (ADDFXL)                     0.18       7.95 f
+  DP_OP_435J1_238_6877_U7/CO (ADDFXL)                     0.18       8.13 f
+  DP_OP_435J1_238_6877_U6/CO (ADDFXL)                     0.18       8.31 f
+  DP_OP_435J1_238_6877_U5/CO (ADDFXL)                     0.18       8.49 f
+  DP_OP_435J1_238_6877_U4/CO (ADDFXL)                     0.18       8.68 f
+  DP_OP_435J1_238_6877_U3/CO (ADDFXL)                     0.17       8.85 f
+  U7105/Y (XOR2XL)                                        0.14       8.99 f
+  U7702/Y (NOR2XL)                                        0.37       9.36 r
+  U11884/Y (XOR2XL)                                       0.18       9.55 f
+  DP_OP_3377J1_707_1839_U13/CO (ADDFXL)                   0.21       9.75 f
+  DP_OP_3377J1_707_1839_U12/CO (ADDFXL)                   0.18       9.94 f
+  DP_OP_3377J1_707_1839_U11/CO (ADDFXL)                   0.18      10.12 f
+  DP_OP_3377J1_707_1839_U10/CO (ADDFXL)                   0.18      10.30 f
+  DP_OP_3377J1_707_1839_U9/CO (ADDFXL)                    0.18      10.48 f
+  DP_OP_3377J1_707_1839_U8/CO (ADDFXL)                    0.18      10.66 f
+  DP_OP_3377J1_707_1839_U7/CO (ADDFXL)                    0.18      10.85 f
+  DP_OP_3377J1_707_1839_U6/CO (ADDFXL)                    0.18      11.03 f
+  DP_OP_3377J1_707_1839_U5/CO (ADDFXL)                    0.18      11.21 f
+  DP_OP_3377J1_707_1839_U4/CO (ADDFXL)                    0.18      11.39 f
+  DP_OP_3377J1_707_1839_U3/S (ADDFXL)                     0.15      11.54 r
+  U15045/Y (AOI222XL)                                     0.07      11.61 f
+  U12045/Y (INVXL)                                        0.06      11.67 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.67 r
+  data arrival time                                                 11.67
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_0__col_gen_0__genblk1_pe_vec_y_reg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7172/Y (NOR2X1)                                        0.29       0.60 r
+  U11331/Y (AND2X2)                                       0.31       0.92 r
+  U17635/Y (INVXL)                                        0.13       1.05 f
+  U17694/Y (OAI21XL)                                      0.10       1.15 r
+  U17695/Y (XOR2XL)                                       0.13       1.28 f
+  DP_OP_118J1_151_8644_U13/CO (ADDFXL)                    0.20       1.48 f
+  DP_OP_118J1_151_8644_U12/CO (ADDFXL)                    0.18       1.66 f
+  DP_OP_118J1_151_8644_U11/CO (ADDFXL)                    0.18       1.84 f
+  DP_OP_118J1_151_8644_U10/CO (ADDFXL)                    0.18       2.02 f
+  DP_OP_118J1_151_8644_U9/CO (ADDFXL)                     0.18       2.21 f
+  DP_OP_118J1_151_8644_U8/CO (ADDFXL)                     0.18       2.39 f
+  DP_OP_118J1_151_8644_U7/CO (ADDFXL)                     0.18       2.57 f
+  DP_OP_118J1_151_8644_U6/CO (ADDFXL)                     0.18       2.75 f
+  DP_OP_118J1_151_8644_U5/CO (ADDFXL)                     0.18       2.93 f
+  DP_OP_118J1_151_8644_U4/CO (ADDFXL)                     0.18       3.12 f
+  DP_OP_118J1_151_8644_U3/CO (ADDFXL)                     0.17       3.29 f
+  U11463/Y (XOR2X1)                                       0.29       3.58 r
+  U7471/Y (INVXL)                                         0.33       3.91 f
+  U17667/Y (XOR2XL)                                       0.15       4.06 f
+  DP_OP_120J1_157_5038_U13/CO (ADDFXL)                    0.20       4.26 f
+  DP_OP_120J1_157_5038_U12/CO (ADDFXL)                    0.18       4.44 f
+  DP_OP_120J1_157_5038_U11/CO (ADDFXL)                    0.18       4.62 f
+  DP_OP_120J1_157_5038_U10/CO (ADDFXL)                    0.18       4.80 f
+  DP_OP_120J1_157_5038_U9/CO (ADDFXL)                     0.18       4.98 f
+  DP_OP_120J1_157_5038_U8/CO (ADDFXL)                     0.18       5.17 f
+  DP_OP_120J1_157_5038_U7/CO (ADDFXL)                     0.18       5.35 f
+  DP_OP_120J1_157_5038_U6/CO (ADDFXL)                     0.18       5.53 f
+  DP_OP_120J1_157_5038_U5/CO (ADDFXL)                     0.18       5.71 f
+  DP_OP_120J1_157_5038_U4/CO (ADDFXL)                     0.18       5.89 f
+  DP_OP_120J1_157_5038_U3/CO (ADDFXL)                     0.17       6.07 f
+  U11465/Y (XOR2X1)                                       0.27       6.33 r
+  U7114/Y (INVX1)                                         0.26       6.59 f
+  U17638/Y (XOR2XL)                                       0.14       6.73 f
+  DP_OP_122J1_163_7317_U13/CO (ADDFXL)                    0.19       6.92 f
+  DP_OP_122J1_163_7317_U12/CO (ADDFXL)                    0.18       7.10 f
+  DP_OP_122J1_163_7317_U11/CO (ADDFXL)                    0.18       7.29 f
+  DP_OP_122J1_163_7317_U10/CO (ADDFXL)                    0.18       7.47 f
+  DP_OP_122J1_163_7317_U9/CO (ADDFXL)                     0.18       7.65 f
+  DP_OP_122J1_163_7317_U8/CO (ADDFXL)                     0.18       7.83 f
+  DP_OP_122J1_163_7317_U7/CO (ADDFXL)                     0.18       8.01 f
+  DP_OP_122J1_163_7317_U6/CO (ADDFXL)                     0.18       8.19 f
+  DP_OP_122J1_163_7317_U5/CO (ADDFXL)                     0.18       8.38 f
+  DP_OP_122J1_163_7317_U4/CO (ADDFXL)                     0.18       8.56 f
+  DP_OP_122J1_163_7317_U3/CO (ADDFXL)                     0.17       8.73 f
+  U7103/Y (XOR2XL)                                        0.14       8.87 f
+  U7704/Y (NOR2XL)                                        0.37       9.24 r
+  U15855/Y (XOR2XL)                                       0.18       9.42 f
+  DP_OP_3335J1_682_5683_U13/CO (ADDFXL)                   0.21       9.63 f
+  DP_OP_3335J1_682_5683_U12/CO (ADDFXL)                   0.18       9.82 f
+  DP_OP_3335J1_682_5683_U11/CO (ADDFXL)                   0.18      10.00 f
+  DP_OP_3335J1_682_5683_U10/CO (ADDFXL)                   0.18      10.18 f
+  DP_OP_3335J1_682_5683_U9/CO (ADDFXL)                    0.18      10.36 f
+  DP_OP_3335J1_682_5683_U8/CO (ADDFXL)                    0.18      10.54 f
+  DP_OP_3335J1_682_5683_U7/CO (ADDFXL)                    0.18      10.72 f
+  DP_OP_3335J1_682_5683_U6/CO (ADDFXL)                    0.18      10.91 f
+  DP_OP_3335J1_682_5683_U5/CO (ADDFXL)                    0.18      11.09 f
+  DP_OP_3335J1_682_5683_U4/CO (ADDFXL)                    0.18      11.27 f
+  DP_OP_3335J1_682_5683_U3/CO (ADDFXL)                    0.17      11.44 f
+  U11926/Y (XOR2XL)                                       0.08      11.52 r
+  U11925/Y (NAND2XL)                                      0.08      11.60 f
+  U17721/Y (OAI211XL)                                     0.05      11.65 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_y_reg_reg_11_/D (DFFRQX1)
+                                                          0.00      11.65 r
+  data arrival time                                                 11.65
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_0__col_gen_0__genblk1_pe_vec_y_reg_reg_11_/CK (DFFRQX1)
+                                                          0.00      12.30 r
+  library setup time                                     -0.15      12.15
+  data required time                                                12.15
+  --------------------------------------------------------------------------
+  data required time                                                12.15
+  data arrival time                                                -11.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7177/Y (NOR2X1)                                        0.31       0.62 r
+  U10790/Y (AND2X2)                                       0.32       0.94 r
+  U17462/Y (AOI22XL)                                      0.10       1.04 f
+  U17463/Y (OAI21XL)                                      0.06       1.10 r
+  U17464/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_353J1_208_4122_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_353J1_208_4122_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_353J1_208_4122_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_353J1_208_4122_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_353J1_208_4122_U9/CO (ADDFXL)                     0.18       2.16 f
+  DP_OP_353J1_208_4122_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_353J1_208_4122_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_353J1_208_4122_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_353J1_208_4122_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_353J1_208_4122_U4/CO (ADDFXL)                     0.18       3.07 f
+  DP_OP_353J1_208_4122_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11348/Y (XOR2X1)                                       0.29       3.53 r
+  U7469/Y (INVXL)                                         0.33       3.86 f
+  U17443/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_355J1_214_516_U13/CO (ADDFXL)                     0.20       4.21 f
+  DP_OP_355J1_214_516_U12/CO (ADDFXL)                     0.18       4.39 f
+  DP_OP_355J1_214_516_U11/CO (ADDFXL)                     0.18       4.57 f
+  DP_OP_355J1_214_516_U10/CO (ADDFXL)                     0.18       4.75 f
+  DP_OP_355J1_214_516_U9/CO (ADDFXL)                      0.18       4.93 f
+  DP_OP_355J1_214_516_U8/CO (ADDFXL)                      0.18       5.11 f
+  DP_OP_355J1_214_516_U7/CO (ADDFXL)                      0.18       5.30 f
+  DP_OP_355J1_214_516_U6/CO (ADDFXL)                      0.18       5.48 f
+  DP_OP_355J1_214_516_U5/CO (ADDFXL)                      0.18       5.66 f
+  DP_OP_355J1_214_516_U4/CO (ADDFXL)                      0.18       5.84 f
+  DP_OP_355J1_214_516_U3/CO (ADDFXL)                      0.17       6.01 f
+  U11351/Y (XOR2X1)                                       0.27       6.29 r
+  U8154/Y (INVXL)                                         0.30       6.59 f
+  U17417/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_357J1_220_6401_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_357J1_220_6401_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_357J1_220_6401_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_357J1_220_6401_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_357J1_220_6401_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_357J1_220_6401_U8/CO (ADDFXL)                     0.18       7.85 f
+  DP_OP_357J1_220_6401_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_357J1_220_6401_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_357J1_220_6401_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_357J1_220_6401_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_357J1_220_6401_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7101/Y (XOR2XL)                                        0.14       8.88 f
+  U11352/Y (NAND2XL)                                      0.08       8.96 r
+  U7610/Y (NAND2XL)                                       0.28       9.24 f
+  U11514/Y (XOR2XL)                                       0.16       9.40 f
+  DP_OP_3376J1_703_6186_U13/CO (ADDFXL)                   0.26       9.66 f
+  DP_OP_3376J1_703_6186_U12/CO (ADDFXL)                   0.24       9.90 f
+  DP_OP_3376J1_703_6186_U11/CO (ADDFXL)                   0.18      10.08 f
+  DP_OP_3376J1_703_6186_U10/CO (ADDFXL)                   0.18      10.26 f
+  DP_OP_3376J1_703_6186_U9/CO (ADDFXL)                    0.18      10.45 f
+  DP_OP_3376J1_703_6186_U8/CO (ADDFXL)                    0.18      10.63 f
+  DP_OP_3376J1_703_6186_U7/CO (ADDFXL)                    0.18      10.81 f
+  DP_OP_3376J1_703_6186_U6/CO (ADDFXL)                    0.18      10.99 f
+  DP_OP_3376J1_703_6186_U5/CO (ADDFXL)                    0.18      11.17 f
+  DP_OP_3376J1_703_6186_U4/CO (ADDFXL)                    0.18      11.36 f
+  DP_OP_3376J1_703_6186_U3/S (ADDFXL)                     0.15      11.51 r
+  U6980/Y (AO22XL)                                        0.09      11.59 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.59 r
+  data arrival time                                                 11.59
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7180/Y (NOR2X1)                                        0.31       0.62 r
+  U10879/Y (AND2X2)                                       0.32       0.94 r
+  U17537/Y (AOI22XL)                                      0.10       1.04 f
+  U17538/Y (OAI21XL)                                      0.06       1.10 r
+  U17539/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_275J1_190_3646_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_275J1_190_3646_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_275J1_190_3646_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_275J1_190_3646_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_275J1_190_3646_U9/CO (ADDFXL)                     0.18       2.15 f
+  DP_OP_275J1_190_3646_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_275J1_190_3646_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_275J1_190_3646_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_275J1_190_3646_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_275J1_190_3646_U4/CO (ADDFXL)                     0.18       3.06 f
+  DP_OP_275J1_190_3646_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11380/Y (XOR2X1)                                       0.29       3.53 r
+  U7470/Y (INVXL)                                         0.33       3.86 f
+  U17513/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_277J1_196_5925_U13/CO (ADDFXL)                    0.20       4.20 f
+  DP_OP_277J1_196_5925_U12/CO (ADDFXL)                    0.18       4.39 f
+  DP_OP_277J1_196_5925_U11/CO (ADDFXL)                    0.18       4.57 f
+  DP_OP_277J1_196_5925_U10/CO (ADDFXL)                    0.18       4.75 f
+  DP_OP_277J1_196_5925_U9/CO (ADDFXL)                     0.18       4.93 f
+  DP_OP_277J1_196_5925_U8/CO (ADDFXL)                     0.18       5.11 f
+  DP_OP_277J1_196_5925_U7/CO (ADDFXL)                     0.18       5.30 f
+  DP_OP_277J1_196_5925_U6/CO (ADDFXL)                     0.18       5.48 f
+  DP_OP_277J1_196_5925_U5/CO (ADDFXL)                     0.18       5.66 f
+  DP_OP_277J1_196_5925_U4/CO (ADDFXL)                     0.18       5.84 f
+  DP_OP_277J1_196_5925_U3/CO (ADDFXL)                     0.17       6.01 f
+  U11383/Y (XOR2X1)                                       0.27       6.29 r
+  U8181/Y (INVXL)                                         0.30       6.59 f
+  U17487/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_279J1_202_4598_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_279J1_202_4598_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_279J1_202_4598_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_279J1_202_4598_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_279J1_202_4598_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_279J1_202_4598_U8/CO (ADDFXL)                     0.18       7.84 f
+  DP_OP_279J1_202_4598_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_279J1_202_4598_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_279J1_202_4598_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_279J1_202_4598_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_279J1_202_4598_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7102/Y (XOR2XL)                                        0.14       8.88 f
+  U11384/Y (NAND2XL)                                      0.08       8.96 r
+  U7633/Y (NAND2XL)                                       0.28       9.24 f
+  U11584/Y (XOR2XL)                                       0.16       9.40 f
+  DP_OP_3363J1_696_4685_U13/CO (ADDFXL)                   0.26       9.66 f
+  DP_OP_3363J1_696_4685_U12/CO (ADDFXL)                   0.24       9.90 f
+  DP_OP_3363J1_696_4685_U11/CO (ADDFXL)                   0.18      10.08 f
+  DP_OP_3363J1_696_4685_U10/CO (ADDFXL)                   0.18      10.26 f
+  DP_OP_3363J1_696_4685_U9/CO (ADDFXL)                    0.18      10.44 f
+  DP_OP_3363J1_696_4685_U8/CO (ADDFXL)                    0.18      10.63 f
+  DP_OP_3363J1_696_4685_U7/CO (ADDFXL)                    0.18      10.81 f
+  DP_OP_3363J1_696_4685_U6/CO (ADDFXL)                    0.18      10.99 f
+  DP_OP_3363J1_696_4685_U5/CO (ADDFXL)                    0.18      11.17 f
+  DP_OP_3363J1_696_4685_U4/CO (ADDFXL)                    0.18      11.35 f
+  DP_OP_3363J1_696_4685_U3/S (ADDFXL)                     0.15      11.51 r
+  U6976/Y (AO22XL)                                        0.09      11.59 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.59 r
+  data arrival time                                                 11.59
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_2__col_gen_2__genblk1_pe_vec_y_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7177/Y (NOR2X1)                                        0.31       0.62 r
+  U10790/Y (AND2X2)                                       0.32       0.94 r
+  U17462/Y (AOI22XL)                                      0.10       1.04 f
+  U17463/Y (OAI21XL)                                      0.06       1.10 r
+  U17464/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_353J1_208_4122_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_353J1_208_4122_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_353J1_208_4122_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_353J1_208_4122_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_353J1_208_4122_U9/CO (ADDFXL)                     0.18       2.16 f
+  DP_OP_353J1_208_4122_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_353J1_208_4122_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_353J1_208_4122_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_353J1_208_4122_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_353J1_208_4122_U4/CO (ADDFXL)                     0.18       3.07 f
+  DP_OP_353J1_208_4122_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11348/Y (XOR2X1)                                       0.29       3.53 r
+  U7469/Y (INVXL)                                         0.33       3.86 f
+  U17443/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_355J1_214_516_U13/CO (ADDFXL)                     0.20       4.21 f
+  DP_OP_355J1_214_516_U12/CO (ADDFXL)                     0.18       4.39 f
+  DP_OP_355J1_214_516_U11/CO (ADDFXL)                     0.18       4.57 f
+  DP_OP_355J1_214_516_U10/CO (ADDFXL)                     0.18       4.75 f
+  DP_OP_355J1_214_516_U9/CO (ADDFXL)                      0.18       4.93 f
+  DP_OP_355J1_214_516_U8/CO (ADDFXL)                      0.18       5.11 f
+  DP_OP_355J1_214_516_U7/CO (ADDFXL)                      0.18       5.30 f
+  DP_OP_355J1_214_516_U6/CO (ADDFXL)                      0.18       5.48 f
+  DP_OP_355J1_214_516_U5/CO (ADDFXL)                      0.18       5.66 f
+  DP_OP_355J1_214_516_U4/CO (ADDFXL)                      0.18       5.84 f
+  DP_OP_355J1_214_516_U3/CO (ADDFXL)                      0.17       6.01 f
+  U11351/Y (XOR2X1)                                       0.27       6.29 r
+  U8154/Y (INVXL)                                         0.30       6.59 f
+  U17417/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_357J1_220_6401_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_357J1_220_6401_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_357J1_220_6401_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_357J1_220_6401_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_357J1_220_6401_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_357J1_220_6401_U8/CO (ADDFXL)                     0.18       7.85 f
+  DP_OP_357J1_220_6401_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_357J1_220_6401_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_357J1_220_6401_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_357J1_220_6401_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_357J1_220_6401_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7101/Y (XOR2XL)                                        0.14       8.88 f
+  U7604/Y (NOR2XL)                                        0.36       9.24 r
+  U15811/Y (XOR2XL)                                       0.18       9.42 f
+  DP_OP_3364J1_700_9527_U13/CO (ADDFXL)                   0.21       9.63 f
+  DP_OP_3364J1_700_9527_U12/CO (ADDFXL)                   0.18       9.81 f
+  DP_OP_3364J1_700_9527_U11/CO (ADDFXL)                   0.18       9.99 f
+  DP_OP_3364J1_700_9527_U10/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3364J1_700_9527_U9/CO (ADDFXL)                    0.18      10.36 f
+  DP_OP_3364J1_700_9527_U8/CO (ADDFXL)                    0.18      10.54 f
+  DP_OP_3364J1_700_9527_U7/CO (ADDFXL)                    0.18      10.72 f
+  DP_OP_3364J1_700_9527_U6/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3364J1_700_9527_U5/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3364J1_700_9527_U4/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3364J1_700_9527_U3/S (ADDFXL)                     0.15      11.42 r
+  U15048/Y (AOI222XL)                                     0.09      11.51 f
+  U6964/Y (INVXL)                                         0.05      11.56 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_y_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.56 r
+  data arrival time                                                 11.56
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_2__col_gen_2__genblk1_pe_vec_y_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_0__col_gen_0__genblk1_pe_vec_x_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7172/Y (NOR2X1)                                        0.29       0.60 r
+  U11331/Y (AND2X2)                                       0.31       0.92 r
+  U17635/Y (INVXL)                                        0.13       1.05 f
+  U17694/Y (OAI21XL)                                      0.10       1.15 r
+  U17695/Y (XOR2XL)                                       0.13       1.28 f
+  DP_OP_118J1_151_8644_U13/CO (ADDFXL)                    0.20       1.48 f
+  DP_OP_118J1_151_8644_U12/CO (ADDFXL)                    0.18       1.66 f
+  DP_OP_118J1_151_8644_U11/CO (ADDFXL)                    0.18       1.84 f
+  DP_OP_118J1_151_8644_U10/CO (ADDFXL)                    0.18       2.02 f
+  DP_OP_118J1_151_8644_U9/CO (ADDFXL)                     0.18       2.21 f
+  DP_OP_118J1_151_8644_U8/CO (ADDFXL)                     0.18       2.39 f
+  DP_OP_118J1_151_8644_U7/CO (ADDFXL)                     0.18       2.57 f
+  DP_OP_118J1_151_8644_U6/CO (ADDFXL)                     0.18       2.75 f
+  DP_OP_118J1_151_8644_U5/CO (ADDFXL)                     0.18       2.93 f
+  DP_OP_118J1_151_8644_U4/CO (ADDFXL)                     0.18       3.12 f
+  DP_OP_118J1_151_8644_U3/CO (ADDFXL)                     0.17       3.29 f
+  U11463/Y (XOR2X1)                                       0.29       3.58 r
+  U7471/Y (INVXL)                                         0.33       3.91 f
+  U17667/Y (XOR2XL)                                       0.15       4.06 f
+  DP_OP_120J1_157_5038_U13/CO (ADDFXL)                    0.20       4.26 f
+  DP_OP_120J1_157_5038_U12/CO (ADDFXL)                    0.18       4.44 f
+  DP_OP_120J1_157_5038_U11/CO (ADDFXL)                    0.18       4.62 f
+  DP_OP_120J1_157_5038_U10/CO (ADDFXL)                    0.18       4.80 f
+  DP_OP_120J1_157_5038_U9/CO (ADDFXL)                     0.18       4.98 f
+  DP_OP_120J1_157_5038_U8/CO (ADDFXL)                     0.18       5.17 f
+  DP_OP_120J1_157_5038_U7/CO (ADDFXL)                     0.18       5.35 f
+  DP_OP_120J1_157_5038_U6/CO (ADDFXL)                     0.18       5.53 f
+  DP_OP_120J1_157_5038_U5/CO (ADDFXL)                     0.18       5.71 f
+  DP_OP_120J1_157_5038_U4/CO (ADDFXL)                     0.18       5.89 f
+  DP_OP_120J1_157_5038_U3/CO (ADDFXL)                     0.17       6.07 f
+  U11465/Y (XOR2X1)                                       0.27       6.33 r
+  U7114/Y (INVX1)                                         0.26       6.59 f
+  U17638/Y (XOR2XL)                                       0.14       6.73 f
+  DP_OP_122J1_163_7317_U13/CO (ADDFXL)                    0.19       6.92 f
+  DP_OP_122J1_163_7317_U12/CO (ADDFXL)                    0.18       7.10 f
+  DP_OP_122J1_163_7317_U11/CO (ADDFXL)                    0.18       7.29 f
+  DP_OP_122J1_163_7317_U10/CO (ADDFXL)                    0.18       7.47 f
+  DP_OP_122J1_163_7317_U9/CO (ADDFXL)                     0.18       7.65 f
+  DP_OP_122J1_163_7317_U8/CO (ADDFXL)                     0.18       7.83 f
+  DP_OP_122J1_163_7317_U7/CO (ADDFXL)                     0.18       8.01 f
+  DP_OP_122J1_163_7317_U6/CO (ADDFXL)                     0.18       8.19 f
+  DP_OP_122J1_163_7317_U5/CO (ADDFXL)                     0.18       8.38 f
+  DP_OP_122J1_163_7317_U4/CO (ADDFXL)                     0.18       8.56 f
+  DP_OP_122J1_163_7317_U3/CO (ADDFXL)                     0.17       8.73 f
+  U7103/Y (XOR2XL)                                        0.14       8.87 f
+  U7318/Y (NAND2XL)                                       0.06       8.93 r
+  U7317/Y (NAND2XL)                                       0.27       9.21 f
+  U11913/Y (XOR2XL)                                       0.16       9.37 f
+  DP_OP_3347J1_685_31_U13/CO (ADDFXL)                     0.26       9.62 f
+  DP_OP_3347J1_685_31_U12/CO (ADDFXL)                     0.24       9.87 f
+  DP_OP_3347J1_685_31_U11/CO (ADDFXL)                     0.18      10.05 f
+  DP_OP_3347J1_685_31_U10/CO (ADDFXL)                     0.18      10.23 f
+  DP_OP_3347J1_685_31_U9/CO (ADDFXL)                      0.18      10.41 f
+  DP_OP_3347J1_685_31_U8/CO (ADDFXL)                      0.18      10.59 f
+  DP_OP_3347J1_685_31_U7/CO (ADDFXL)                      0.18      10.78 f
+  DP_OP_3347J1_685_31_U6/CO (ADDFXL)                      0.18      10.96 f
+  DP_OP_3347J1_685_31_U5/CO (ADDFXL)                      0.18      11.14 f
+  DP_OP_3347J1_685_31_U4/CO (ADDFXL)                      0.18      11.32 f
+  DP_OP_3347J1_685_31_U3/S (ADDFXL)                       0.15      11.47 r
+  U6966/Y (AO22XL)                                        0.09      11.56 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_x_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.56 r
+  data arrival time                                                 11.56
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_0__col_gen_0__genblk1_pe_vec_x_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_3__col_gen_3__genblk1_pe_vec_y_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7180/Y (NOR2X1)                                        0.31       0.62 r
+  U10879/Y (AND2X2)                                       0.32       0.94 r
+  U17537/Y (AOI22XL)                                      0.10       1.04 f
+  U17538/Y (OAI21XL)                                      0.06       1.10 r
+  U17539/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_275J1_190_3646_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_275J1_190_3646_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_275J1_190_3646_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_275J1_190_3646_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_275J1_190_3646_U9/CO (ADDFXL)                     0.18       2.15 f
+  DP_OP_275J1_190_3646_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_275J1_190_3646_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_275J1_190_3646_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_275J1_190_3646_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_275J1_190_3646_U4/CO (ADDFXL)                     0.18       3.06 f
+  DP_OP_275J1_190_3646_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11380/Y (XOR2X1)                                       0.29       3.53 r
+  U7470/Y (INVXL)                                         0.33       3.86 f
+  U17513/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_277J1_196_5925_U13/CO (ADDFXL)                    0.20       4.20 f
+  DP_OP_277J1_196_5925_U12/CO (ADDFXL)                    0.18       4.39 f
+  DP_OP_277J1_196_5925_U11/CO (ADDFXL)                    0.18       4.57 f
+  DP_OP_277J1_196_5925_U10/CO (ADDFXL)                    0.18       4.75 f
+  DP_OP_277J1_196_5925_U9/CO (ADDFXL)                     0.18       4.93 f
+  DP_OP_277J1_196_5925_U8/CO (ADDFXL)                     0.18       5.11 f
+  DP_OP_277J1_196_5925_U7/CO (ADDFXL)                     0.18       5.30 f
+  DP_OP_277J1_196_5925_U6/CO (ADDFXL)                     0.18       5.48 f
+  DP_OP_277J1_196_5925_U5/CO (ADDFXL)                     0.18       5.66 f
+  DP_OP_277J1_196_5925_U4/CO (ADDFXL)                     0.18       5.84 f
+  DP_OP_277J1_196_5925_U3/CO (ADDFXL)                     0.17       6.01 f
+  U11383/Y (XOR2X1)                                       0.27       6.29 r
+  U8181/Y (INVXL)                                         0.30       6.59 f
+  U17487/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_279J1_202_4598_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_279J1_202_4598_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_279J1_202_4598_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_279J1_202_4598_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_279J1_202_4598_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_279J1_202_4598_U8/CO (ADDFXL)                     0.18       7.84 f
+  DP_OP_279J1_202_4598_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_279J1_202_4598_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_279J1_202_4598_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_279J1_202_4598_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_279J1_202_4598_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7102/Y (XOR2XL)                                        0.14       8.88 f
+  U7624/Y (NOR2XL)                                        0.36       9.24 r
+  U15830/Y (XOR2XL)                                       0.18       9.42 f
+  DP_OP_3351J1_693_3166_U13/CO (ADDFXL)                   0.21       9.63 f
+  DP_OP_3351J1_693_3166_U12/CO (ADDFXL)                   0.18       9.81 f
+  DP_OP_3351J1_693_3166_U11/CO (ADDFXL)                   0.18       9.99 f
+  DP_OP_3351J1_693_3166_U10/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3351J1_693_3166_U9/CO (ADDFXL)                    0.18      10.35 f
+  DP_OP_3351J1_693_3166_U8/CO (ADDFXL)                    0.18      10.54 f
+  DP_OP_3351J1_693_3166_U7/CO (ADDFXL)                    0.18      10.72 f
+  DP_OP_3351J1_693_3166_U6/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3351J1_693_3166_U5/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3351J1_693_3166_U4/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3351J1_693_3166_U3/S (ADDFXL)                     0.15      11.42 r
+  U15046/Y (AOI222XL)                                     0.09      11.51 f
+  U15047/Y (INVXL)                                        0.05      11.56 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_y_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.56 r
+  data arrival time                                                 11.56
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_3__col_gen_3__genblk1_pe_vec_y_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_0__col_gen_0__genblk1_pe_vec_y_reg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7172/Y (NOR2X1)                                        0.29       0.60 r
+  U11331/Y (AND2X2)                                       0.31       0.92 r
+  U17635/Y (INVXL)                                        0.13       1.05 f
+  U17694/Y (OAI21XL)                                      0.10       1.15 r
+  U17695/Y (XOR2XL)                                       0.13       1.28 f
+  DP_OP_118J1_151_8644_U13/CO (ADDFXL)                    0.20       1.48 f
+  DP_OP_118J1_151_8644_U12/CO (ADDFXL)                    0.18       1.66 f
+  DP_OP_118J1_151_8644_U11/CO (ADDFXL)                    0.18       1.84 f
+  DP_OP_118J1_151_8644_U10/CO (ADDFXL)                    0.18       2.02 f
+  DP_OP_118J1_151_8644_U9/CO (ADDFXL)                     0.18       2.21 f
+  DP_OP_118J1_151_8644_U8/CO (ADDFXL)                     0.18       2.39 f
+  DP_OP_118J1_151_8644_U7/CO (ADDFXL)                     0.18       2.57 f
+  DP_OP_118J1_151_8644_U6/CO (ADDFXL)                     0.18       2.75 f
+  DP_OP_118J1_151_8644_U5/CO (ADDFXL)                     0.18       2.93 f
+  DP_OP_118J1_151_8644_U4/CO (ADDFXL)                     0.18       3.12 f
+  DP_OP_118J1_151_8644_U3/CO (ADDFXL)                     0.17       3.29 f
+  U11463/Y (XOR2X1)                                       0.29       3.58 r
+  U7471/Y (INVXL)                                         0.33       3.91 f
+  U17667/Y (XOR2XL)                                       0.15       4.06 f
+  DP_OP_120J1_157_5038_U13/CO (ADDFXL)                    0.20       4.26 f
+  DP_OP_120J1_157_5038_U12/CO (ADDFXL)                    0.18       4.44 f
+  DP_OP_120J1_157_5038_U11/CO (ADDFXL)                    0.18       4.62 f
+  DP_OP_120J1_157_5038_U10/CO (ADDFXL)                    0.18       4.80 f
+  DP_OP_120J1_157_5038_U9/CO (ADDFXL)                     0.18       4.98 f
+  DP_OP_120J1_157_5038_U8/CO (ADDFXL)                     0.18       5.17 f
+  DP_OP_120J1_157_5038_U7/CO (ADDFXL)                     0.18       5.35 f
+  DP_OP_120J1_157_5038_U6/CO (ADDFXL)                     0.18       5.53 f
+  DP_OP_120J1_157_5038_U5/CO (ADDFXL)                     0.18       5.71 f
+  DP_OP_120J1_157_5038_U4/CO (ADDFXL)                     0.18       5.89 f
+  DP_OP_120J1_157_5038_U3/CO (ADDFXL)                     0.17       6.07 f
+  U11465/Y (XOR2X1)                                       0.27       6.33 r
+  U7114/Y (INVX1)                                         0.26       6.59 f
+  U17638/Y (XOR2XL)                                       0.14       6.73 f
+  DP_OP_122J1_163_7317_U13/CO (ADDFXL)                    0.19       6.92 f
+  DP_OP_122J1_163_7317_U12/CO (ADDFXL)                    0.18       7.10 f
+  DP_OP_122J1_163_7317_U11/CO (ADDFXL)                    0.18       7.29 f
+  DP_OP_122J1_163_7317_U10/CO (ADDFXL)                    0.18       7.47 f
+  DP_OP_122J1_163_7317_U9/CO (ADDFXL)                     0.18       7.65 f
+  DP_OP_122J1_163_7317_U8/CO (ADDFXL)                     0.18       7.83 f
+  DP_OP_122J1_163_7317_U7/CO (ADDFXL)                     0.18       8.01 f
+  DP_OP_122J1_163_7317_U6/CO (ADDFXL)                     0.18       8.19 f
+  DP_OP_122J1_163_7317_U5/CO (ADDFXL)                     0.18       8.38 f
+  DP_OP_122J1_163_7317_U4/CO (ADDFXL)                     0.18       8.56 f
+  DP_OP_122J1_163_7317_U3/CO (ADDFXL)                     0.17       8.73 f
+  U7103/Y (XOR2XL)                                        0.14       8.87 f
+  U7704/Y (NOR2XL)                                        0.37       9.24 r
+  U15855/Y (XOR2XL)                                       0.18       9.42 f
+  DP_OP_3335J1_682_5683_U13/CO (ADDFXL)                   0.21       9.63 f
+  DP_OP_3335J1_682_5683_U12/CO (ADDFXL)                   0.18       9.82 f
+  DP_OP_3335J1_682_5683_U11/CO (ADDFXL)                   0.18      10.00 f
+  DP_OP_3335J1_682_5683_U10/CO (ADDFXL)                   0.18      10.18 f
+  DP_OP_3335J1_682_5683_U9/CO (ADDFXL)                    0.18      10.36 f
+  DP_OP_3335J1_682_5683_U8/CO (ADDFXL)                    0.18      10.54 f
+  DP_OP_3335J1_682_5683_U7/CO (ADDFXL)                    0.18      10.72 f
+  DP_OP_3335J1_682_5683_U6/CO (ADDFXL)                    0.18      10.91 f
+  DP_OP_3335J1_682_5683_U5/CO (ADDFXL)                    0.18      11.09 f
+  DP_OP_3335J1_682_5683_U4/CO (ADDFXL)                    0.18      11.27 f
+  DP_OP_3335J1_682_5683_U3/S (ADDFXL)                     0.15      11.42 r
+  U12046/Y (NAND2XL)                                      0.06      11.48 f
+  U17719/Y (OAI211XL)                                     0.05      11.53 r
+  row_gen_0__col_gen_0__genblk1_pe_vec_y_reg_reg_10_/D (DFFRQXL)
+                                                          0.00      11.53 r
+  data arrival time                                                 11.53
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_0__col_gen_0__genblk1_pe_vec_y_reg_reg_10_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.14      12.16
+  data required time                                                12.16
+  --------------------------------------------------------------------------
+  data required time                                                12.16
+  data arrival time                                                -11.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U11283/Y (NAND2BX2)                                     0.32       0.63 f
+  U11287/Y (NOR2X2)                                       0.50       1.13 r
+  U17394/Y (AOI222XL)                                     0.18       1.32 f
+  U17395/Y (INVXL)                                        0.06       1.38 r
+  U7444/Y (XOR2XL)                                        0.13       1.50 f
+  DP_OP_431J1_226_8680_U13/CO (ADDFXL)                    0.20       1.70 f
+  DP_OP_431J1_226_8680_U12/CO (ADDFXL)                    0.18       1.88 f
+  DP_OP_431J1_226_8680_U11/CO (ADDFXL)                    0.18       2.07 f
+  DP_OP_431J1_226_8680_U10/CO (ADDFXL)                    0.18       2.25 f
+  DP_OP_431J1_226_8680_U9/CO (ADDFXL)                     0.18       2.43 f
+  DP_OP_431J1_226_8680_U8/CO (ADDFXL)                     0.18       2.61 f
+  DP_OP_431J1_226_8680_U7/CO (ADDFXL)                     0.18       2.79 f
+  DP_OP_431J1_226_8680_U6/CO (ADDFXL)                     0.18       2.98 f
+  DP_OP_431J1_226_8680_U5/CO (ADDFXL)                     0.18       3.16 f
+  DP_OP_431J1_226_8680_U4/CO (ADDFXL)                     0.18       3.34 f
+  DP_OP_431J1_226_8680_U3/CO (ADDFXL)                     0.17       3.51 f
+  U11453/Y (XOR2X1)                                       0.30       3.81 r
+  U6956/Y (INVX2)                                         0.18       4.00 f
+  U17379/Y (XOR2XL)                                       0.13       4.12 f
+  DP_OP_433J1_232_7353_U13/CO (ADDFXL)                    0.19       4.31 f
+  DP_OP_433J1_232_7353_U12/CO (ADDFXL)                    0.18       4.50 f
+  DP_OP_433J1_232_7353_U11/CO (ADDFXL)                    0.18       4.68 f
+  DP_OP_433J1_232_7353_U10/CO (ADDFXL)                    0.18       4.86 f
+  DP_OP_433J1_232_7353_U9/CO (ADDFXL)                     0.18       5.04 f
+  DP_OP_433J1_232_7353_U8/CO (ADDFXL)                     0.18       5.22 f
+  DP_OP_433J1_232_7353_U7/CO (ADDFXL)                     0.18       5.40 f
+  DP_OP_433J1_232_7353_U6/CO (ADDFXL)                     0.18       5.59 f
+  DP_OP_433J1_232_7353_U5/CO (ADDFXL)                     0.18       5.77 f
+  DP_OP_433J1_232_7353_U4/CO (ADDFXL)                     0.18       5.95 f
+  DP_OP_433J1_232_7353_U3/CO (ADDFXL)                     0.17       6.12 f
+  U9010/Y (XOR2X1)                                        0.26       6.39 r
+  U12221/Y (INVXL)                                        0.31       6.70 f
+  U7673/Y (XOR2XL)                                        0.15       6.84 f
+  DP_OP_435J1_238_6877_U13/CO (ADDFXL)                    0.20       7.04 f
+  DP_OP_435J1_238_6877_U12/CO (ADDFXL)                    0.18       7.22 f
+  DP_OP_435J1_238_6877_U11/CO (ADDFXL)                    0.18       7.40 f
+  DP_OP_435J1_238_6877_U10/CO (ADDFXL)                    0.18       7.59 f
+  DP_OP_435J1_238_6877_U9/CO (ADDFXL)                     0.18       7.77 f
+  DP_OP_435J1_238_6877_U8/CO (ADDFXL)                     0.18       7.95 f
+  DP_OP_435J1_238_6877_U7/CO (ADDFXL)                     0.18       8.13 f
+  DP_OP_435J1_238_6877_U6/CO (ADDFXL)                     0.18       8.31 f
+  DP_OP_435J1_238_6877_U5/CO (ADDFXL)                     0.18       8.49 f
+  DP_OP_435J1_238_6877_U4/CO (ADDFXL)                     0.18       8.68 f
+  DP_OP_435J1_238_6877_U3/CO (ADDFXL)                     0.17       8.85 f
+  U7105/Y (XOR2XL)                                        0.14       8.99 f
+  U7307/Y (NAND2BXL)                                      0.07       9.06 r
+  U7306/Y (NAND2XL)                                       0.27       9.33 f
+  U11874/Y (XOR2XL)                                       0.16       9.49 f
+  DP_OP_3389J1_710_3724_U13/CO (ADDFXL)                   0.26       9.74 f
+  DP_OP_3389J1_710_3724_U12/CO (ADDFXL)                   0.24       9.99 f
+  DP_OP_3389J1_710_3724_U11/CO (ADDFXL)                   0.18      10.17 f
+  DP_OP_3389J1_710_3724_U10/CO (ADDFXL)                   0.18      10.35 f
+  DP_OP_3389J1_710_3724_U9/CO (ADDFXL)                    0.18      10.53 f
+  DP_OP_3389J1_710_3724_U8/CO (ADDFXL)                    0.18      10.71 f
+  DP_OP_3389J1_710_3724_U7/CO (ADDFXL)                    0.18      10.90 f
+  DP_OP_3389J1_710_3724_U6/CO (ADDFXL)                    0.18      11.08 f
+  DP_OP_3389J1_710_3724_U5/CO (ADDFXL)                    0.18      11.26 f
+  DP_OP_3389J1_710_3724_U4/S (ADDFXL)                     0.15      11.41 r
+  U7028/Y (AO22XL)                                        0.09      11.50 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_9_/D (DFFRQXL)
+                                                          0.00      11.50 r
+  data arrival time                                                 11.50
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_1__col_gen_1__genblk1_pe_vec_x_reg_reg_9_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U11283/Y (NAND2BX2)                                     0.32       0.63 f
+  U11287/Y (NOR2X2)                                       0.50       1.13 r
+  U17394/Y (AOI222XL)                                     0.18       1.32 f
+  U17395/Y (INVXL)                                        0.06       1.38 r
+  U7444/Y (XOR2XL)                                        0.13       1.50 f
+  DP_OP_431J1_226_8680_U13/CO (ADDFXL)                    0.20       1.70 f
+  DP_OP_431J1_226_8680_U12/CO (ADDFXL)                    0.18       1.88 f
+  DP_OP_431J1_226_8680_U11/CO (ADDFXL)                    0.18       2.07 f
+  DP_OP_431J1_226_8680_U10/CO (ADDFXL)                    0.18       2.25 f
+  DP_OP_431J1_226_8680_U9/CO (ADDFXL)                     0.18       2.43 f
+  DP_OP_431J1_226_8680_U8/CO (ADDFXL)                     0.18       2.61 f
+  DP_OP_431J1_226_8680_U7/CO (ADDFXL)                     0.18       2.79 f
+  DP_OP_431J1_226_8680_U6/CO (ADDFXL)                     0.18       2.98 f
+  DP_OP_431J1_226_8680_U5/CO (ADDFXL)                     0.18       3.16 f
+  DP_OP_431J1_226_8680_U4/CO (ADDFXL)                     0.18       3.34 f
+  DP_OP_431J1_226_8680_U3/CO (ADDFXL)                     0.17       3.51 f
+  U11453/Y (XOR2X1)                                       0.30       3.81 r
+  U6956/Y (INVX2)                                         0.18       4.00 f
+  U17379/Y (XOR2XL)                                       0.13       4.12 f
+  DP_OP_433J1_232_7353_U13/CO (ADDFXL)                    0.19       4.31 f
+  DP_OP_433J1_232_7353_U12/CO (ADDFXL)                    0.18       4.50 f
+  DP_OP_433J1_232_7353_U11/CO (ADDFXL)                    0.18       4.68 f
+  DP_OP_433J1_232_7353_U10/CO (ADDFXL)                    0.18       4.86 f
+  DP_OP_433J1_232_7353_U9/CO (ADDFXL)                     0.18       5.04 f
+  DP_OP_433J1_232_7353_U8/CO (ADDFXL)                     0.18       5.22 f
+  DP_OP_433J1_232_7353_U7/CO (ADDFXL)                     0.18       5.40 f
+  DP_OP_433J1_232_7353_U6/CO (ADDFXL)                     0.18       5.59 f
+  DP_OP_433J1_232_7353_U5/CO (ADDFXL)                     0.18       5.77 f
+  DP_OP_433J1_232_7353_U4/CO (ADDFXL)                     0.18       5.95 f
+  DP_OP_433J1_232_7353_U3/CO (ADDFXL)                     0.17       6.12 f
+  U9010/Y (XOR2X1)                                        0.26       6.39 r
+  U12221/Y (INVXL)                                        0.31       6.70 f
+  U7673/Y (XOR2XL)                                        0.15       6.84 f
+  DP_OP_435J1_238_6877_U13/CO (ADDFXL)                    0.20       7.04 f
+  DP_OP_435J1_238_6877_U12/CO (ADDFXL)                    0.18       7.22 f
+  DP_OP_435J1_238_6877_U11/CO (ADDFXL)                    0.18       7.40 f
+  DP_OP_435J1_238_6877_U10/CO (ADDFXL)                    0.18       7.59 f
+  DP_OP_435J1_238_6877_U9/CO (ADDFXL)                     0.18       7.77 f
+  DP_OP_435J1_238_6877_U8/CO (ADDFXL)                     0.18       7.95 f
+  DP_OP_435J1_238_6877_U7/CO (ADDFXL)                     0.18       8.13 f
+  DP_OP_435J1_238_6877_U6/CO (ADDFXL)                     0.18       8.31 f
+  DP_OP_435J1_238_6877_U5/CO (ADDFXL)                     0.18       8.49 f
+  DP_OP_435J1_238_6877_U4/CO (ADDFXL)                     0.18       8.68 f
+  DP_OP_435J1_238_6877_U3/CO (ADDFXL)                     0.17       8.85 f
+  U7105/Y (XOR2XL)                                        0.14       8.99 f
+  U7702/Y (NOR2XL)                                        0.37       9.36 r
+  U11884/Y (XOR2XL)                                       0.18       9.55 f
+  DP_OP_3377J1_707_1839_U13/CO (ADDFXL)                   0.21       9.75 f
+  DP_OP_3377J1_707_1839_U12/CO (ADDFXL)                   0.18       9.94 f
+  DP_OP_3377J1_707_1839_U11/CO (ADDFXL)                   0.18      10.12 f
+  DP_OP_3377J1_707_1839_U10/CO (ADDFXL)                   0.18      10.30 f
+  DP_OP_3377J1_707_1839_U9/CO (ADDFXL)                    0.18      10.48 f
+  DP_OP_3377J1_707_1839_U8/CO (ADDFXL)                    0.18      10.66 f
+  DP_OP_3377J1_707_1839_U7/CO (ADDFXL)                    0.18      10.85 f
+  DP_OP_3377J1_707_1839_U6/CO (ADDFXL)                    0.18      11.03 f
+  DP_OP_3377J1_707_1839_U5/CO (ADDFXL)                    0.18      11.21 f
+  DP_OP_3377J1_707_1839_U4/S (ADDFXL)                     0.15      11.36 r
+  U15039/Y (AOI222XL)                                     0.07      11.43 f
+  U15040/Y (INVXL)                                        0.06      11.48 r
+  row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_9_/D (DFFRQXL)
+                                                          0.00      11.48 r
+  data arrival time                                                 11.48
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_1__col_gen_1__genblk1_pe_vec_y_reg_reg_9_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.68
+
+
+  Startpoint: row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7177/Y (NOR2X1)                                        0.31       0.62 r
+  U10790/Y (AND2X2)                                       0.32       0.94 r
+  U17462/Y (AOI22XL)                                      0.10       1.04 f
+  U17463/Y (OAI21XL)                                      0.06       1.10 r
+  U17464/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_353J1_208_4122_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_353J1_208_4122_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_353J1_208_4122_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_353J1_208_4122_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_353J1_208_4122_U9/CO (ADDFXL)                     0.18       2.16 f
+  DP_OP_353J1_208_4122_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_353J1_208_4122_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_353J1_208_4122_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_353J1_208_4122_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_353J1_208_4122_U4/CO (ADDFXL)                     0.18       3.07 f
+  DP_OP_353J1_208_4122_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11348/Y (XOR2X1)                                       0.29       3.53 r
+  U7469/Y (INVXL)                                         0.33       3.86 f
+  U17443/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_355J1_214_516_U13/CO (ADDFXL)                     0.20       4.21 f
+  DP_OP_355J1_214_516_U12/CO (ADDFXL)                     0.18       4.39 f
+  DP_OP_355J1_214_516_U11/CO (ADDFXL)                     0.18       4.57 f
+  DP_OP_355J1_214_516_U10/CO (ADDFXL)                     0.18       4.75 f
+  DP_OP_355J1_214_516_U9/CO (ADDFXL)                      0.18       4.93 f
+  DP_OP_355J1_214_516_U8/CO (ADDFXL)                      0.18       5.11 f
+  DP_OP_355J1_214_516_U7/CO (ADDFXL)                      0.18       5.30 f
+  DP_OP_355J1_214_516_U6/CO (ADDFXL)                      0.18       5.48 f
+  DP_OP_355J1_214_516_U5/CO (ADDFXL)                      0.18       5.66 f
+  DP_OP_355J1_214_516_U4/CO (ADDFXL)                      0.18       5.84 f
+  DP_OP_355J1_214_516_U3/CO (ADDFXL)                      0.17       6.01 f
+  U11351/Y (XOR2X1)                                       0.27       6.29 r
+  U8154/Y (INVXL)                                         0.30       6.59 f
+  U17417/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_357J1_220_6401_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_357J1_220_6401_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_357J1_220_6401_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_357J1_220_6401_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_357J1_220_6401_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_357J1_220_6401_U8/CO (ADDFXL)                     0.18       7.85 f
+  DP_OP_357J1_220_6401_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_357J1_220_6401_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_357J1_220_6401_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_357J1_220_6401_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_357J1_220_6401_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7101/Y (XOR2XL)                                        0.14       8.88 f
+  U11352/Y (NAND2XL)                                      0.08       8.96 r
+  U7610/Y (NAND2XL)                                       0.28       9.24 f
+  U11514/Y (XOR2XL)                                       0.16       9.40 f
+  DP_OP_3376J1_703_6186_U13/CO (ADDFXL)                   0.26       9.66 f
+  DP_OP_3376J1_703_6186_U12/CO (ADDFXL)                   0.24       9.90 f
+  DP_OP_3376J1_703_6186_U11/CO (ADDFXL)                   0.18      10.08 f
+  DP_OP_3376J1_703_6186_U10/CO (ADDFXL)                   0.18      10.26 f
+  DP_OP_3376J1_703_6186_U9/CO (ADDFXL)                    0.18      10.45 f
+  DP_OP_3376J1_703_6186_U8/CO (ADDFXL)                    0.18      10.63 f
+  DP_OP_3376J1_703_6186_U7/CO (ADDFXL)                    0.18      10.81 f
+  DP_OP_3376J1_703_6186_U6/CO (ADDFXL)                    0.18      10.99 f
+  DP_OP_3376J1_703_6186_U5/CO (ADDFXL)                    0.18      11.17 f
+  DP_OP_3376J1_703_6186_U4/S (ADDFXL)                     0.15      11.32 r
+  U6992/Y (AO22XL)                                        0.09      11.41 r
+  row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_9_/D (DFFRQXL)
+                                                          0.00      11.41 r
+  data arrival time                                                 11.41
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_2__col_gen_2__genblk1_pe_vec_x_reg_reg_9_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/CK (DFFRQXL)
+                                                          0.00 #     0.00 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_state_reg_2_/Q (DFFRQXL)
+                                                          0.31       0.31 f
+  U7180/Y (NOR2X1)                                        0.31       0.62 r
+  U10879/Y (AND2X2)                                       0.32       0.94 r
+  U17537/Y (AOI22XL)                                      0.10       1.04 f
+  U17538/Y (OAI21XL)                                      0.06       1.10 r
+  U17539/Y (XOR2XL)                                       0.13       1.24 f
+  DP_OP_275J1_190_3646_U13/CO (ADDFXL)                    0.19       1.43 f
+  DP_OP_275J1_190_3646_U12/CO (ADDFXL)                    0.18       1.61 f
+  DP_OP_275J1_190_3646_U11/CO (ADDFXL)                    0.18       1.79 f
+  DP_OP_275J1_190_3646_U10/CO (ADDFXL)                    0.18       1.97 f
+  DP_OP_275J1_190_3646_U9/CO (ADDFXL)                     0.18       2.15 f
+  DP_OP_275J1_190_3646_U8/CO (ADDFXL)                     0.18       2.34 f
+  DP_OP_275J1_190_3646_U7/CO (ADDFXL)                     0.18       2.52 f
+  DP_OP_275J1_190_3646_U6/CO (ADDFXL)                     0.18       2.70 f
+  DP_OP_275J1_190_3646_U5/CO (ADDFXL)                     0.18       2.88 f
+  DP_OP_275J1_190_3646_U4/CO (ADDFXL)                     0.18       3.06 f
+  DP_OP_275J1_190_3646_U3/CO (ADDFXL)                     0.17       3.24 f
+  U11380/Y (XOR2X1)                                       0.29       3.53 r
+  U7470/Y (INVXL)                                         0.33       3.86 f
+  U17513/Y (XOR2XL)                                       0.15       4.01 f
+  DP_OP_277J1_196_5925_U13/CO (ADDFXL)                    0.20       4.20 f
+  DP_OP_277J1_196_5925_U12/CO (ADDFXL)                    0.18       4.39 f
+  DP_OP_277J1_196_5925_U11/CO (ADDFXL)                    0.18       4.57 f
+  DP_OP_277J1_196_5925_U10/CO (ADDFXL)                    0.18       4.75 f
+  DP_OP_277J1_196_5925_U9/CO (ADDFXL)                     0.18       4.93 f
+  DP_OP_277J1_196_5925_U8/CO (ADDFXL)                     0.18       5.11 f
+  DP_OP_277J1_196_5925_U7/CO (ADDFXL)                     0.18       5.30 f
+  DP_OP_277J1_196_5925_U6/CO (ADDFXL)                     0.18       5.48 f
+  DP_OP_277J1_196_5925_U5/CO (ADDFXL)                     0.18       5.66 f
+  DP_OP_277J1_196_5925_U4/CO (ADDFXL)                     0.18       5.84 f
+  DP_OP_277J1_196_5925_U3/CO (ADDFXL)                     0.17       6.01 f
+  U11383/Y (XOR2X1)                                       0.27       6.29 r
+  U8181/Y (INVXL)                                         0.30       6.59 f
+  U17487/Y (XOR2XL)                                       0.15       6.74 f
+  DP_OP_279J1_202_4598_U13/CO (ADDFXL)                    0.20       6.94 f
+  DP_OP_279J1_202_4598_U12/CO (ADDFXL)                    0.18       7.12 f
+  DP_OP_279J1_202_4598_U11/CO (ADDFXL)                    0.18       7.30 f
+  DP_OP_279J1_202_4598_U10/CO (ADDFXL)                    0.18       7.48 f
+  DP_OP_279J1_202_4598_U9/CO (ADDFXL)                     0.18       7.66 f
+  DP_OP_279J1_202_4598_U8/CO (ADDFXL)                     0.18       7.84 f
+  DP_OP_279J1_202_4598_U7/CO (ADDFXL)                     0.18       8.03 f
+  DP_OP_279J1_202_4598_U6/CO (ADDFXL)                     0.18       8.21 f
+  DP_OP_279J1_202_4598_U5/CO (ADDFXL)                     0.18       8.39 f
+  DP_OP_279J1_202_4598_U4/CO (ADDFXL)                     0.18       8.57 f
+  DP_OP_279J1_202_4598_U3/CO (ADDFXL)                     0.17       8.74 f
+  U7102/Y (XOR2XL)                                        0.14       8.88 f
+  U11384/Y (NAND2XL)                                      0.08       8.96 r
+  U7633/Y (NAND2XL)                                       0.28       9.24 f
+  U11584/Y (XOR2XL)                                       0.16       9.40 f
+  DP_OP_3363J1_696_4685_U13/CO (ADDFXL)                   0.26       9.66 f
+  DP_OP_3363J1_696_4685_U12/CO (ADDFXL)                   0.24       9.90 f
+  DP_OP_3363J1_696_4685_U11/CO (ADDFXL)                   0.18      10.08 f
+  DP_OP_3363J1_696_4685_U10/CO (ADDFXL)                   0.18      10.26 f
+  DP_OP_3363J1_696_4685_U9/CO (ADDFXL)                    0.18      10.44 f
+  DP_OP_3363J1_696_4685_U8/CO (ADDFXL)                    0.18      10.63 f
+  DP_OP_3363J1_696_4685_U7/CO (ADDFXL)                    0.18      10.81 f
+  DP_OP_3363J1_696_4685_U6/CO (ADDFXL)                    0.18      10.99 f
+  DP_OP_3363J1_696_4685_U5/CO (ADDFXL)                    0.18      11.17 f
+  DP_OP_3363J1_696_4685_U4/S (ADDFXL)                     0.15      11.32 r
+  U6999/Y (AO22XL)                                        0.09      11.41 r
+  row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_9_/D (DFFRQXL)
+                                                          0.00      11.41 r
+  data arrival time                                                 11.41
+
+  clock clk (rise edge)                                  12.50      12.50
+  clock network delay (ideal)                             0.00      12.50
+  clock uncertainty                                      -0.20      12.30
+  row_gen_3__col_gen_3__genblk1_pe_vec_x_reg_reg_9_/CK (DFFRQXL)
+                                                          0.00      12.30 r
+  library setup time                                     -0.13      12.17
+  data required time                                                12.17
+  --------------------------------------------------------------------------
+  data required time                                                12.17
+  data arrival time                                                -11.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+1

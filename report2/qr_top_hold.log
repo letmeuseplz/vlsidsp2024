@@ -1,0 +1,617 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : qr_top
+Version: T-2022.03
+Date   : Mon Apr 13 15:00:57 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: a_valid_in (input port clocked by clk)
+  Endpoint: wr_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  a_valid_in (in)                          0.00       0.00 r
+  U18027/Y (AOI22XL)                       0.12       0.12 f
+  U12058/Y (CLKBUFX2)                      0.07       0.20 f
+  wr_ptr_reg_0_/D (DFFRQXL)                0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  wr_ptr_reg_0_/CK (DFFRQXL)               0.00       0.10 r
+  library hold time                        0.05       0.15
+  data required time                                  0.15
+  -----------------------------------------------------------
+  data required time                                  0.15
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: start_qr (input port clocked by clk)
+  Endpoint: state_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  start_qr (in)                            0.00       0.00 f
+  U18025/Y (AOI21XL)                       0.15       0.15 r
+  U18026/Y (OAI2B2XL)                      0.06       0.21 f
+  state_reg_0_/D (DFFRQXL)                 0.00       0.21 f
+  data arrival time                                   0.21
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  state_reg_0_/CK (DFFRQXL)                0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.21
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: a_din_0[6] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__3__8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[6] (in)                          0.00       0.00 f
+  U12455/Y (INVXL)                         0.15       0.15 r
+  U12403/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__3__8_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__3__8_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[5] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__3__7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[5] (in)                          0.00       0.00 f
+  U12468/Y (INVXL)                         0.15       0.15 r
+  U12573/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__3__7_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__3__7_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[3] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__3__5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[3] (in)                          0.00       0.00 f
+  U12428/Y (INVXL)                         0.15       0.15 r
+  U12520/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__3__5_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__3__5_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[2] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__3__4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[2] (in)                          0.00       0.00 f
+  U12460/Y (INVXL)                         0.15       0.15 r
+  U12519/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__3__4_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__3__4_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[1] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__3__3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[1] (in)                          0.00       0.00 f
+  U12521/Y (INVXL)                         0.15       0.15 r
+  U12577/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__3__3_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__3__3_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[7] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__2__9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[7] (in)                          0.00       0.00 f
+  U12464/Y (INVXL)                         0.15       0.15 r
+  U12531/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__2__9_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__2__9_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[4] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__2__6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[4] (in)                          0.00       0.00 f
+  U12527/Y (INVXL)                         0.15       0.15 r
+  U12561/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__2__6_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__2__6_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[0] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__2__2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[0] (in)                          0.00       0.00 f
+  U12420/Y (INVXL)                         0.15       0.15 r
+  U12472/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__2__2_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__2__2_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_1[4] (input port clocked by clk)
+  Endpoint: fifo_a_reg_1__0__6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_1[4] (in)                          0.00       0.00 f
+  U12503/Y (INVXL)                         0.15       0.15 r
+  U12397/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_1__0__6_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_1__0__6_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_1[0] (input port clocked by clk)
+  Endpoint: fifo_a_reg_1__0__2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_1[0] (in)                          0.00       0.00 f
+  U12462/Y (INVXL)                         0.15       0.15 r
+  U12563/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_1__0__2_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_1__0__2_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[7] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[7] (in)                          0.00       0.00 f
+  U12464/Y (INVXL)                         0.15       0.15 r
+  U12538/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__9_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__9_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[6] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[6] (in)                          0.00       0.00 f
+  U12455/Y (INVXL)                         0.15       0.15 r
+  U12557/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__8_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__8_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[5] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[5] (in)                          0.00       0.00 f
+  U12468/Y (INVXL)                         0.15       0.15 r
+  U12536/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__7_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__7_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[4] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[4] (in)                          0.00       0.00 f
+  U12527/Y (INVXL)                         0.15       0.15 r
+  U12554/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__6_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__6_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[3] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[3] (in)                          0.00       0.00 f
+  U12428/Y (INVXL)                         0.15       0.15 r
+  U12532/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__5_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__5_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[2] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[2] (in)                          0.00       0.00 f
+  U12460/Y (INVXL)                         0.15       0.15 r
+  U12543/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__4_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__4_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[1] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[1] (in)                          0.00       0.00 f
+  U12521/Y (INVXL)                         0.15       0.15 r
+  U12562/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__3_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__3_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: a_din_0[0] (input port clocked by clk)
+  Endpoint: fifo_a_reg_0__0__2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  a_din_0[0] (in)                          0.00       0.00 f
+  U12420/Y (INVXL)                         0.15       0.15 r
+  U12470/Y (AOI2BB2XL)                     0.08       0.23 f
+  fifo_a_reg_0__0__2_/D (DFFRQXL)          0.00       0.23 f
+  data arrival time                                   0.23
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  fifo_a_reg_0__0__2_/CK (DFFRQXL)         0.00       0.10 r
+  library hold time                        0.04       0.14
+  data required time                                  0.14
+  -----------------------------------------------------------
+  data required time                                  0.14
+  data arrival time                                  -0.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+1
